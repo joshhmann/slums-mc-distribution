@@ -1,0 +1,93 @@
+#Settings for Tornado and Wind damage regrowth.
+[wind_regrowth]
+	#The minimum time (in ticks) a tornado stump must wait after creation before it can START growing.
+	#6000 Ticks = 5 Minutes.
+	#Default: 6000.
+	# Default: 6000
+	# Range: 0 ~ 72000
+	regrowthDelay = 6000
+	#The chance (0.0 to 1.0) that a tornado stump will turn into a sapling per random tick.
+	#Default: 0.04 (1.5 Hours to full heal).
+	# Default: 0.04
+	# Range: 0.0 ~ 1.0
+	regrowthChance = 0.04
+	#If true, Vanilla Grass will naturally spread onto and heal 'Scoured Grass'.
+	#Default: true
+	healScouredGrass = true
+	#The chance (0.0 to 1.0) that tall grass or flowers will sprout when a PMWeather dirt scar is healed.
+	#Default: 0.15 (15% chance). Lower this to reduce flora density.
+	# Default: 0.15
+	# Range: 0.0 ~ 1.0
+	floralRegrowthChance = 0.15
+	#The chance (0.0 to 1.0) that a wind-damaged log or leaf will heal per random tick.
+	#Default: 0.2 (20% chance, or 1.5 hours ). Higher = Faster healing.
+	# Default: 0.2
+	# Range: 0.0 ~ 1.0
+	healingChance = 0.2
+	#The radius (in blocks) around the player where wind damage occurs.
+	#Higher values create more destructive wind events but check more blocks. May impact performance.
+	#Default: 64
+	# Default: 64
+	# Range: 16 ~ 256
+	windRadius = 64
+
+#Settings for Wildfire damage regrowth.
+[wildfire_regrowth]
+	#If true, trees burnt by PM Weather wildfires will turn into regrowing stumps instead of charred logs.
+	#Default: true
+	enableFireRegrowth = true
+	#The minimum time (in ticks) a burnt stump must wait before it can START growing.
+	#This prevents trees from trying to regrow while the fire is still burning.
+	#24000 Ticks = 20 Minutes (1 Full Minecraft Day).
+	#Default: 24000.
+	# Default: 24000
+	# Range: 0 ~ 240000
+	fireRegrowthDelay = 24000
+	#The chance (0.0 to 1.0) that a wildfire stump will turn into a sapling per random tick.
+	#0.03 = ~2 Hours (Real Time)
+	#Default: 0.03 (2-3 Hours to full heal).
+	# Default: 0.03
+	# Range: 0.0 ~ 1.0
+	fireRegrowthChance = 0.03
+	#If true, Vanilla Grass will naturally spread onto and heal 'Charred Dirt' and 'Burnt Grass'.
+	#This allows wildfire scars to heal over time.
+	#Default: false
+	healBurntGrass = true
+
+#Optional: regenerate player-placed builds destroyed by tornado, wind, or fire.
+[structure_regrowth]
+	#If true, player-placed blocks destroyed by tornadoes, wind, or fire become invisible
+	#placeholders that slowly restore the original block (including chest contents).
+	#Uses PMWeather's existing player-placed marks (no extra place tracking).
+	#Default: false
+	enableStructureRegrowth = false
+	#Chance (0.0 to 1.0) that a structure placeholder restores per random tick.
+	#Default: 0.05
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	structureRegrowthChance = 0.05
+	#Minimum ticks after destruction before a structure placeholder can restore.
+	#6000 Ticks = 5 Minutes.
+	#Default: 6000
+	# Default: 6000
+	# Range: 0 ~ 240000
+	structureRegrowthDelay = 6000
+
+#Shared settings and performance tweaks.
+[performance]
+	#The probability (0.0 to 1.0) that grass will successfully spread to Scoured OR Charred dirt per tick.
+	#This controls the healing speed for both tornado and fire scars.
+	#Default: 0.30 (Slower healing, 2-3 hours for full heal).
+	# Default: 0.3
+	# Range: 0.0 ~ 1.0
+	healScouredGrassChance = 0.3
+	#If true, logs destroyed by the falling tree logic (vanilla stumps and Dynamic Trees doomed soil) will drop item stacks.
+	#Default: false
+	dropLogItems = false
+	#If true, stumps and structure placeholders in unloaded chunks simulate growth/heal on reload.
+	#Default: true
+	catchUpGrowth = true
+	#If true, the 'Catch-Up' mechanic will force the tree to grow INSTANTLY instead of just placing a sapling.
+	#WARNING: Can cause lag spikes.
+	#Default: false
+	instantCatchUp = false

@@ -1,0 +1,13 @@
+name = "pmwextra-0.2.1"
+filename = "pmwextra-0.2.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/EkOB83Jm/versions/2RysQE1i/pmwextra-0.2.1.jar"
+hash-format = "sha512"
+hash = "b50ec7eb0caec414a33aa6eabd11487e1298219343097b78d75945260997a0420b4f26befd166400b1f1f92c35137ca913b465e2089ead1386b0f5c718d1049b"
+
+[update]
+[update.modrinth]
+mod-id = "EkOB83Jm"
+version = "2RysQE1i"

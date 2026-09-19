@@ -1,0 +1,952 @@
+#Whether to log Weather2 dependency status during common setup.
+logStartup = true
+
+[persistence]
+	#Persists addon storm state such as tornado width, bend, alert cooldowns, and satellite tornadoes through Weather2 storm NBT.
+	enabled = true
+
+[dynamics]
+	#Enables unpredictable Weather2 tornado motion.
+	enabled = true
+	#Maximum random steering angle added to Weather2 tornado movement.
+	# Default: 38.0
+	# Range: 0.0 ~ 120.0
+	tornadoWanderMaxDegrees = 38.0
+	#How quickly tornadoes turn toward the next random steering target.
+	# Default: 0.045
+	# Range: 0.001 ~ 1.0
+	tornadoWanderSmoothing = 0.045
+	# Default: 60
+	# Range: 1 ~ 12000
+	tornadoWanderMinRetargetTicks = 60
+	# Default: 180
+	# Range: 1 ~ 12000
+	tornadoWanderMaxRetargetTicks = 180
+	#Makes Weather2 tornado funnels visibly lean, bend, and curve by offsetting funnel layers.
+	tornadoFunnelBend = true
+	# Default: 72.0
+	# Range: 0.0 ~ 240.0
+	tornadoFunnelBendMaxBlocks = 72.0
+	# Default: 20.0
+	# Range: 0.0 ~ 120.0
+	tornadoFunnelBendSwayBlocks = 20.0
+	# Default: 0.075
+	# Range: 0.001 ~ 1.0
+	tornadoFunnelBendSmoothing = 0.075
+	# Default: 0.06
+	# Range: 0.0 ~ 0.95
+	funnelBendAnchorFraction = 0.06
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	funnelBendMaxHeightFraction = 1.0
+	#Allows narrow/moderate tornadoes to use an elephant-trunk visual morphology without changing tornado labels or windfield physics.
+	elephantTrunkTornadoes = true
+	#Per-retarget chance for a narrow tornado to become an elephant-trunk visual variant. Kept low because this tag is rare and mutually exclusive with sidewinders and multi-vortex episodes.
+	# Default: 0.07
+	# Range: 0.0 ~ 1.0
+	elephantTrunkChance = 0.07
+	#Minimum Weather2 tornado intensity stage for elephant-trunk visuals. Weather2 forming stage is normally 4.
+	# Default: 4
+	# Range: 0 ~ 32
+	elephantTrunkMinStage = 4
+	#Maximum visible-funnel to damage-path width fraction for elephant-trunk visuals. Wider wedge-like funnels are blocked.
+	# Default: 0.7
+	# Range: 0.05 ~ 1.0
+	elephantTrunkMaxVisibleWidthFraction = 0.7
+	# Default: 1.25
+	# Range: 0.0 ~ 3.0
+	elephantTrunkCurveStrength = 1.25
+	# Default: 55
+	# Range: 1 ~ 1200
+	elephantTrunkTransitionTicks = 55
+	#Allows rare drill-bit tornado morphology: a very narrow, fast-spinning funnel that can still carry strong windfield damage.
+	drillBitTornadoes = true
+	#Per-retarget chance for an eligible tornado to lock into the drill-bit tag. The tag is mutually exclusive with sidewinders, elephant trunks, and multi-vortex episodes.
+	# Default: 0.035
+	# Range: 0.0 ~ 1.0
+	drillBitChance = 0.035
+	#Minimum Weather2 tornado intensity stage for drill-bit visuals.
+	# Default: 5
+	# Range: 0 ~ 32
+	drillBitMinStage = 5
+	#Prevents natural Weather2 tornadoes from steering directly at the nearest player when they form.
+	noPlayerAimOnSpawn = true
+	#Allows tornadoes to reintensify or deintensify based on nearby environment.
+	environmentalIntensity = true
+	# Default: 100
+	# Range: 20 ~ 6000
+	environmentScanIntervalTicks = 100
+	# Default: 0.68
+	# Range: 0.0 ~ 1.0
+	environmentReintensifyThreshold = 0.68
+	# Default: 0.28
+	# Range: 0.0 ~ 1.0
+	environmentDeintensifyThreshold = 0.28
+	#Reweights natural Weather2 tornado max-intensity rolls so EF0/EF1 are common, EF2/EF3 are uncommon, and EF4/EF5 are rare. This never sets the current storm stage directly.
+	weightedTornadoIntensityDistribution = true
+	#Small multiplier for natural tornado-capable max-intensity rolls from the daily SPC outlook. Values above 1 make tornado-capable storms a little more common without instant spawning.
+	# Default: 1.18
+	# Range: 0.0 ~ 4.0
+	tornadoCapableRateBoost = 1.18
+	#Scales Weather2 tornado visual spin speed from the addon tornado windfield mph.
+	windSpeedSpin = true
+	# Default: 0.055
+	# Range: 0.0 ~ 2.0
+	windSpeedSpinMin = 0.055
+	# Default: 0.36
+	# Range: 0.0 ~ 2.0
+	windSpeedSpinMax = 0.36
+	# Default: 0.12
+	# Range: 0.001 ~ 1.0
+	windSpeedSpinSmoothing = 0.12
+	# Default: 65.0
+	# Range: 0.0 ~ 500.0
+	windSpeedSpinReferenceMinMph = 65.0
+	# Default: 321.0
+	# Range: 1.0 ~ 500.0
+	windSpeedSpinReferenceMaxMph = 321.0
+	#Binds natural Weather2 storm motion to Weather2's global wind grid with an ENE/right-of-flow steering bias.
+	atmosphericSteering = true
+	#Target storm translational speed multiplier: target velocity = global wind vector * this coefficient.
+	# Default: 0.38
+	# Range: 0.0 ~ 4.0
+	atmosphericSteeringCoefficient = 0.38
+	#Clockwise right-of-flow rotation applied to the global wind vector. 15 degrees matches the default mesocyclone bias.
+	# Default: 15.0
+	# Range: -90.0 ~ 90.0
+	atmosphericSteeringRightBiasDegrees = 15.0
+	#Blends the rotated wind toward an east-northeast storm track. Set 0 for pure Weather2 wind-grid flow.
+	# Default: 0.55
+	# Range: 0.0 ~ 1.0
+	atmosphericSteeringEneBiasStrength = 0.55
+	#Slow steering-current variability. This is deterministic meander, not per-tick random jitter; hurricanes use a stronger minimum.
+	# Default: 0.32
+	# Range: 0.0 ~ 1.5
+	atmosphericSteeringWobbleFraction = 0.32
+	#Minimum natural drift speed while atmospheric steering is active.
+	# Default: 0.055
+	# Range: 0.0 ~ 2.0
+	atmosphericSteeringMinSpeed = 0.055
+	#Maximum natural drift speed from atmospheric steering before Weather2 sync.
+	# Default: 0.54
+	# Range: 0.01 ~ 4.0
+	atmosphericSteeringMaxSpeed = 0.54
+
+[widths]
+	#Enables tornado width changes that are independent of windspeed.
+	enabled = true
+	#Uses separate damage-path width, visible funnel width, core radius, and radius of maximum wind.
+	realisticModel = true
+	#Legacy multiplier used only when realisticModel=false. This is not miles.
+	# Default: 0.45
+	# Range: 0.1 ~ 50.0
+	tornadoWidthMinMultiplier = 0.45
+	#Legacy multiplier used only when realisticModel=false. This is not miles.
+	# Default: 2.35
+	# Range: 0.1 ~ 50.0
+	tornadoWidthMaxMultiplier = 2.35
+	# Default: 0.035
+	# Range: 0.001 ~ 1.0
+	tornadoWidthSmoothing = 0.035
+	# Default: 200
+	# Range: 1 ~ 12000
+	widthRetargetMinTicks = 200
+	# Default: 700
+	# Range: 1 ~ 12000
+	widthRetargetMaxTicks = 700
+	#Minimum realistic damage-path width in blocks when minDamageWidthMiles is 0.
+	# Default: 12.0
+	# Range: 3.0 ~ 8.04672E7
+	minDamageWidthBlocks = 12.0
+	#Maximum realistic damage-path width in blocks when maxDamageWidthMiles is 0. One mile is 1609.344 blocks.
+	# Default: 420.0
+	# Range: 3.0 ~ 8.04672E7
+	maxDamageWidthBlocks = 420.0
+	#Optional minimum damage-path width in miles. Set to 0 to use minDamageWidthBlocks.
+	# Default: 0.0
+	# Range: 0.0 ~ 50000.0
+	minDamageWidthMiles = 0.0
+	#Optional maximum damage-path width in miles. Set to 0 to use maxDamageWidthBlocks; use miles only for unusually large events.
+	# Default: 0.0
+	# Range: 0.0 ~ 50000.0
+	maxDamageWidthMiles = 0.0
+	#Safety cap for the rendered Weather2 funnel base size in blocks when maxVisibleFunnelWidthMiles is 0. Damage-path width can still be larger.
+	# Default: 320.0
+	# Range: 3.0 ~ 8.04672E7
+	maxVisibleFunnelWidthBlocks = 320.0
+	#Optional rendered funnel cap in miles. Set to 0 to use maxVisibleFunnelWidthBlocks. Huge values can be heavy because Weather2 also uses funnel size internally.
+	# Default: 0.0
+	# Range: 0.0 ~ 50000.0
+	maxVisibleFunnelWidthMiles = 0.0
+	# Default: 0.35
+	# Range: 0.05 ~ 1.0
+	visibleFunnelFractionMin = 0.35
+	# Default: 0.75
+	# Range: 0.05 ~ 1.0
+	visibleFunnelFractionMax = 0.75
+
+[damage]
+	#Enables balanced tornado damage limits and strength checks.
+	enabled = true
+	# Default: 18
+	# Range: 0 ~ 1000
+	maxBlocksPerStormPerTick = 18
+	# Default: 0.8
+	# Range: 0.05 ~ 10.0
+	blockStrengthMinMultiplier = 0.8
+	# Default: 1.5
+	# Range: 0.05 ~ 10.0
+	blockStrengthMaxMultiplier = 1.5
+	loadedChunksOnly = true
+	openDoorsInsteadOfRipping = true
+	grabLivingEntities = true
+	grabPlayers = true
+	groundScouring = true
+	treeDebarking = true
+	#Keeps chests, barrels, furnaces, and other block entities from being destroyed by addon damage by default.
+	preserveInventoryBlockEntities = true
+	#Prevents tornado block pickup from turning grass, dirt, farmland, mud, and similar terrain into flying debris. Scouring can still convert the surface separately.
+	neverPickupSoil = true
+	#Requires local sampled tornado windspeed to beat material resistance before a block can be grabbed or destroyed.
+	windResistance = true
+	#Adds a small capped debris-impact damage pass near strong tornadoes without spawning real item spam.
+	flyingBlockImpactDamage = true
+	#Allows debris-impact damage to affect non-inventory block entities. Inventory block entities are still preserved when preserveInventoryBlockEntities=true.
+	blockEntityImpactDamage = false
+	#When false, skips tornado block pickup/scouring on Valkyrien Skies ship-managed blocks to avoid physics conflicts.
+	affectValkyrienShips = false
+	#Minimum wind for weak blocks such as plants and glass.
+	# Default: 65.0
+	# Range: 0.0 ~ 500.0
+	ef0PickupMph = 65.0
+	#Minimum wind for wood, doors, fences, slabs, and similar house materials. Keeps EF0 tornadoes from shredding houses.
+	# Default: 115.0
+	# Range: 0.0 ~ 500.0
+	woodPickupMph = 115.0
+	#Minimum wind for logs, stone, brick, concrete, and sturdy structure blocks.
+	# Default: 145.0
+	# Range: 0.0 ~ 500.0
+	stonePickupMph = 145.0
+	#Minimum wind for heavy metal or very hard blocks that are not explicitly protected.
+	# Default: 200.0
+	# Range: 0.0 ~ 500.0
+	heavyPickupMph = 200.0
+	# Default: 135.0
+	# Range: 0.0 ~ 500.0
+	treeDebarkMph = 135.0
+	# Default: 170.0
+	# Range: 0.0 ~ 500.0
+	heavyTreeDebarkMph = 170.0
+	#Weather2 stage for light scouring. 5 is F1 / stage 1.
+	# Default: 6
+	# Range: 4 ~ 9
+	lightScouringStage = 6
+	# Default: 7
+	# Range: 4 ~ 9
+	mediumScouringStage = 7
+	# Default: 8
+	# Range: 4 ~ 9
+	heavyScouringStage = 8
+
+[windfield]
+	#Enables modified Rankine-style tornado wind sampling for gameplay systems.
+	enabled = true
+	# Default: 75.0
+	# Range: 0.0 ~ 400.0
+	formingMph = 75.0
+	# Default: 115.0
+	# Range: 0.0 ~ 400.0
+	stage1Mph = 115.0
+	# Default: 145.0
+	# Range: 0.0 ~ 400.0
+	stage2Mph = 145.0
+	# Default: 180.0
+	# Range: 0.0 ~ 400.0
+	stage3Mph = 180.0
+	# Default: 240.0
+	# Range: 0.0 ~ 450.0
+	stage4Mph = 240.0
+	# Default: 321.0
+	# Range: 0.0 ~ 500.0
+	stage5Mph = 321.0
+	#Makes tornado max wind a smooth live value from Weather2 intensity, storm structure, global wind, width, and gust pulses instead of a fixed stage number.
+	dynamicWindSpeeds = true
+	#Per-tick smoothing for live tornado wind speed. Higher values react faster.
+	# Default: 0.16
+	# Range: 0.01 ~ 1.0
+	dynamicWindSmoothing = 0.16
+	#How much live max wind can pulse around its target from embedded gusts and subvortex surges.
+	# Default: 0.13
+	# Range: 0.0 ~ 0.5
+	dynamicGustiness = 0.13
+	# Default: 0.36
+	# Range: 0.0 ~ 2.0
+	radialInflowFraction = 0.36
+	# Default: 0.22
+	# Range: 0.0 ~ 2.0
+	verticalLiftFraction = 0.22
+	#Converts sampled wind mph into small per-tick entity velocity changes.
+	# Default: 5.5E-4
+	# Range: 0.0 ~ 0.02
+	entityPushScale = 5.5E-4
+
+[multi_vortex]
+	enabled = true
+	# Default: 10
+	# Range: 0 ~ 10
+	maxCount = 10
+	# Default: 6
+	# Range: 4 ~ 9
+	minStage = 6
+	#Base chance for a mature tornado to enter a multi-vortex episode on each attempt. Stage/intensity can raise this slightly, but episodes remain rare.
+	# Default: 0.07
+	# Range: 0.0 ~ 1.0
+	episodeChance = 0.07
+	# Default: 1400
+	# Range: 20 ~ 24000
+	minAttemptIntervalTicks = 1400
+	# Default: 3600
+	# Range: 20 ~ 24000
+	maxAttemptIntervalTicks = 3600
+	# Default: 240
+	# Range: 20 ~ 12000
+	minEpisodeTicks = 240
+	# Default: 760
+	# Range: 20 ~ 12000
+	maxEpisodeTicks = 760
+	# Default: 1.35
+	# Range: 1.0 ~ 5.0
+	damageMultiplier = 1.35
+
+[horizontal_vortices]
+	#Adds short horizontal vortex tubes around the tornado base and RFD-side outer circulation.
+	enabled = true
+	# Default: 4
+	# Range: 0 ~ 10
+	maxCount = 4
+	# Default: 5
+	# Range: 4 ~ 9
+	minStage = 5
+
+[merging]
+	enabled = true
+	# Default: 20
+	# Range: 5 ~ 1200
+	mergeScanIntervalTicks = 20
+	# Default: 40
+	# Range: 1 ~ 1200
+	mergeOverlapTicks = 40
+	mergeAbsorbWeaker = true
+	#Makes merging tornadoes/supercells orbit or curve around a shared center before the weaker circulation is absorbed.
+	orbitBeforeAbsorb = true
+	# Default: 80
+	# Range: 0 ~ 1200
+	orbitTicks = 80
+	# Default: 0.22
+	# Range: 0.0 ~ 2.0
+	orbitStrength = 0.22
+
+[supercell_merging]
+	#Merges severe Weather2 thunderstorm/supercell cells server-side using soft dissipation for the absorbed storm.
+	enabled = true
+	#Minimum Weather2 intensity stage eligible for supercell merging. Default 1 matches Weather2 thunder stage.
+	# Default: 1
+	# Range: 0 ~ 9
+	minIntensityStage = 1
+	# Default: 20
+	# Range: 5 ~ 1200
+	scanIntervalTicks = 20
+	# Default: 60
+	# Range: 1 ~ 1200
+	overlapTicks = 60
+	# Default: 0.65
+	# Range: 0.05 ~ 4.0
+	mergeDistanceMultiplier = 0.65
+	# Default: 220.0
+	# Range: 16.0 ~ 2048.0
+	maxMergeDistanceBlocks = 220.0
+	# Default: 0.35
+	# Range: 0.0 ~ 1.0
+	intensityPulse = 0.35
+	# Default: 0.3
+	# Range: 0.0 ~ 1.0
+	motionAbsorbFraction = 0.3
+	softDissipateAbsorbed = true
+	#Unsafe fallback for debugging only. Default false avoids Weather2 removal/sync crashes.
+	hardRemoveAbsorbed = false
+
+[supercell_structure]
+	#Adds organized supercell structure to severe Weather2 land storms: updraft, wall cloud, anvil, FFD/RFD, inflow, and radar structure.
+	enabled = true
+	clientVisuals = true
+	radarStructure = true
+	#Lets supercell inflow, forward-flank downdraft, and rear-flank downdraft affect anemometers and radar velocity.
+	windfieldInfluence = true
+	# Default: 900
+	# Range: 64 ~ 4096
+	renderRangeBlocks = 900
+	# Default: 70
+	# Range: 0 ~ 800
+	maxStructureParticlesPerTick = 70
+	anvilParticles = true
+	wallCloudParticles = true
+	#Adds a persistent lowered rotating wall cloud under the supercell rain-free updraft base.
+	wallCloudLowering = true
+	#Minimum mesocyclone strength before wall-cloud lowering can organize.
+	# Default: 0.45
+	# Range: 0.0 ~ 1.0
+	wallCloudMinMesocycloneStrength = 0.45
+	#Ticks a rotating wall cloud must persist before it modestly boosts radar/SPC tornado potential.
+	# Default: 200
+	# Range: 0 ~ 24000
+	wallCloudMinPersistenceTicks = 200
+	#Maximum visual wall-cloud lowering diameter in blocks.
+	# Default: 240
+	# Range: 24 ~ 1024
+	wallCloudMaxDiameterBlocks = 240
+	#Maximum visual lowering depth below the rain-free base in blocks.
+	# Default: 42
+	# Range: 0 ~ 192
+	wallCloudMaxLoweringBlocks = 42
+	#Adds rotating ragged cloud tags around organized wall clouds.
+	wallCloudRotationParticles = true
+	#Adds upward scud/fractus feeding into the wall cloud from the inflow side.
+	wallCloudScudFeedParticles = false
+	#Lets persistent rotating wall clouds modestly increase SPC/radar tornado potential without triggering TOR warnings by themselves.
+	wallCloudRiskBoost = true
+	gustFrontParticles = true
+	flankingLineParticles = true
+	virgaMammatusParticles = true
+	#Optional entity-push hook for severe rear-flank/forward-flank outflow. Off by default; anemometers still read the wind when windfieldInfluence=true.
+	rfdStraightLineWind = false
+
+[radar]
+	enabled = true
+	# Default: 1024
+	# Range: 64 ~ 8192
+	rangeBlocks = 1024
+	# Default: 20
+	# Range: 5 ~ 1200
+	updateIntervalTicks = 20
+	#Uses an in-world animated radar panel instead of opening a GUI.
+	worldPanel = true
+	#Keeps the radar map north-up and stable; only storm returns move.
+	stableNorthUp = true
+	#Draws confirmed tornado/satellite/landspout circulations at server-authoritative positions.
+	confirmedCirculationMarker = true
+
+[daily_spc_outlook]
+	#Calculates a fictional daily SPC-style thermodynamic outlook each game morning. It only gates new storm spawning, not active tornado width/lifecycle.
+	enabled = true
+	#If Serene Seasons is installed, use its season/sub-season as a read-only thermodynamic modifier.
+	sereneSeasonsThermodynamics = true
+	#Global scale for daily SPC spawn multipliers before an event initializes.
+	# Default: 1.0
+	# Range: 0.0 ~ 8.0
+	spawnMultiplierScale = 1.0
+	#Global scale for parent rotation threshold gating. This never mutates active tornado physics.
+	# Default: 1.0
+	# Range: 0.2 ~ 2.0
+	rotationThresholdScale = 1.0
+
+[surveys]
+	#Enables persistent in-game tornado tracks and automatic fictional EF-style damage surveys.
+	enabled = true
+	# Default: 96
+	# Range: 16 ~ 512
+	radiusBlocks = 96
+	# Default: 20
+	# Range: 5 ~ 1200
+	trackRecordIntervalTicks = 20
+	# Default: 72000
+	# Range: 1200 ~ 288000
+	maxTrackAgeTicks = 72000
+	#Only tracks with points inside this recent window can be selected by the Damage Surveyor. Keeps old tornadoes out of new surveys.
+	# Default: 9600
+	# Range: 200 ~ 72000
+	recentTrackWindowTicks = 9600
+	#Track map only sends/draws recent points near the survey area instead of the full lifetime path.
+	# Default: 360
+	# Range: 64 ~ 4096
+	trackContextBlocks = 360
+	openGuiOnSurvey = true
+
+[alerts]
+	enabled = true
+	structuredProducts = true
+	tornadoEmergency = true
+	#Never plays real or simulated EAS/SAME/WEA tones; only custom vanilla-style faux tones.
+	safeFauxTonesOnly = true
+	#Uses vanilla note/bell sounds for fictional in-game alerts.
+	fauxSound = true
+	# Default: 900
+	# Range: 64 ~ 8192
+	rangeBlocks = 900
+	# Default: 1400
+	# Range: 64 ~ 8192
+	watchRangeBlocks = 1400
+	# Default: 900
+	# Range: 64 ~ 8192
+	warningRangeBlocks = 900
+	# Default: 600
+	# Range: 0 ~ 24000
+	warningPathLeadTicks = 600
+	# Default: 900
+	# Range: 20 ~ 36000
+	cooldownTicks = 900
+
+[storm_types]
+	waterspouts = true
+	#Spawns addon-owned fair-weather waterspout vortices over water near developing Weather2 showers/thunderstorms.
+	fairWeatherWaterspouts = true
+	cyclones = false
+	#Allows addon-derived broad maritime hurricane phenomena in late-summer/early-autumn thermodynamic windows.
+	hurricanes = false
+	#Spawns addon-owned non-supercell landspout vortices near developing Weather2 thunderstorms over land.
+	landspouts = true
+	#Spawns small fair-weather dust devils on clear, dry, hot terrain.
+	dustDevils = true
+	#Spawns brief shallow vortices along thunderstorm and squall-line outflow boundaries.
+	gustnadoes = true
+	#Allows rare Weather2 tornadoes to lock into a floater morphology tag that keeps the funnel visually detached from the ground.
+	floaterTornadoes = true
+	#Spawns very rare fair-weather snow devils over cold snow or ice surfaces.
+	snowDevils = true
+	#Reserved fire-weather setting. Fire weather is currently disabled by the server runtime.
+	wildfires = false
+	#Reserved fire-weather setting. Fire weather is currently disabled by the server runtime.
+	fireWhirls = false
+	#Reserved fire-weather setting. Fire weather is currently disabled by the server runtime.
+	flammagenitusClouds = false
+	#Reserved fire-weather setting. Fire weather is currently disabled by the server runtime.
+	fireWeatherRisk = false
+	# Default: 0.018
+	# Range: 0.0 ~ 1.0
+	landspoutSpawnChance = 0.018
+	# Default: 0.024
+	# Range: 0.0 ~ 1.0
+	waterspoutSpawnChance = 0.024
+	# Default: 0.01
+	# Range: 0.0 ~ 1.0
+	dustDevilSpawnChance = 0.01
+	# Default: 0.016
+	# Range: 0.0 ~ 1.0
+	gustnadoSpawnChance = 0.016
+	# Default: 0.006
+	# Range: 0.0 ~ 1.0
+	hurricaneSpawnChance = 0.006
+	#Per-retarget chance for an eligible Weather2 tornado to become floater-tagged. This no longer creates addon-owned /ewd events.
+	# Default: 0.006
+	# Range: 0.0 ~ 1.0
+	floaterTornadoSpawnChance = 0.006
+	# Default: 0.003
+	# Range: 0.0 ~ 1.0
+	snowDevilSpawnChance = 0.003
+	#Per-player fire-weather spawn chance before SPC multipliers. Runtime caps this so wildfires stay rare even with old configs.
+	# Default: 0.0012
+	# Range: 0.0 ~ 1.0
+	wildfireSpawnChance = 0.0012
+	# Default: 0.012
+	# Range: 0.0 ~ 1.0
+	fireWhirlSpawnChance = 0.012
+	# Default: 1
+	# Range: 0 ~ 4
+	maxActiveHurricanes = 1
+	#Allows rare anti-cyclonic Weather2 tornadoes. The addon flips Weather2 StormObject.spinSpeed negative for these tornadoes.
+	antiCyclonicTornadoes = true
+	#Chance that a newly assigned natural Weather2 tornado rotates anti-cyclonically. Rare by default.
+	# Default: 0.035
+	# Range: 0.0 ~ 1.0
+	antiCyclonicTornadoChance = 0.035
+	#Uses Weather2's own spinSpeed field so Weather2 particles/funnel visuals rotate the opposite way.
+	antiCyclonicInvertWeather2Spin = true
+	# Default: 8
+	# Range: 0 ~ 64
+	maxAddonVortices = 8
+
+[satellite_tornadoes]
+	enabled = true
+	#Models satellite tornadoes as addon-owned circulations with their own position, motion, windfield, and damage.
+	realCirculation = true
+	#Maximum active satellite tornadoes per parent tornado. Hard-capped to one in runtime so satellites stay rare and readable.
+	# Default: 1
+	# Range: 0 ~ 1
+	maxActive = 1
+	# Default: 5
+	# Range: 4 ~ 9
+	minParentStage = 5
+	# Default: 0.6
+	# Range: 0.05 ~ 1.0
+	maxWindFraction = 0.6
+	#Per-attempt satellite tornado chance. Runtime also caps this to a rare maximum for existing configs.
+	# Default: 0.045
+	# Range: 0.0 ~ 1.0
+	spawnChance = 0.045
+	# Default: 6
+	# Range: 0 ~ 128
+	damageBlocksPerTick = 6
+
+[winter]
+	alerts = true
+
+[squall_lines]
+	#Builds a continuous Weather2-seeded gust-front / shelf-cloud boundary with straight-line wind hazards.
+	enabled = true
+	# Default: 3
+	# Range: 2 ~ 16
+	minCells = 3
+	# Default: 220
+	# Range: 40 ~ 1200
+	maxThicknessBlocks = 220
+	#Upper cap for organized squall-line lifetime. Common lines roll 3-8 real hours; exceptional lines can persist 12-30 real hours before this cap.
+	# Default: 2160000
+	# Range: 72000 ~ 2160000
+	maxAgeTicks = 2160000
+
+[flooding]
+	#Places capped shallow water in low terrain under heavy Weather2 rain cores, squall lines, and hurricanes.
+	enabled = true
+	# Default: 20
+	# Range: 5 ~ 600
+	scanIntervalTicks = 20
+	# Default: 12
+	# Range: 0 ~ 256
+	maxBlocksPerTick = 12
+	# Default: 360
+	# Range: 32 ~ 2048
+	rangeBlocks = 360
+	#Minimum derived rain intensity before flood water is allowed to accumulate.
+	# Default: 0.62
+	# Range: 0.0 ~ 2.0
+	rainThreshold = 0.62
+	#Maximum shallow flood depth the addon will create at one surface column.
+	# Default: 1
+	# Range: 1 ~ 4
+	maxDepthBlocks = 1
+
+[anemometer]
+	enabled = true
+
+[inflow_jets]
+	enabled = false
+	# Default: 100
+	# Range: 10 ~ 512
+	lengthBlocks = 100
+	# Default: 5
+	# Range: 0 ~ 80
+	particlesPerTick = 5
+
+[visuals]
+	enabled = true
+	#Uses Weather2/ExtendedRenderer EntityRotFX particles for addon storm visuals. Disable only if a renderer or shader pack conflicts.
+	extendedRendering = true
+	# Default: 0.8
+	# Range: 0.0 ~ 1.5
+	severeSkyTintStrength = 0.8
+	clearIntervals = true
+	# Default: 0.03
+	# Range: 0.0 ~ 1.0
+	clearIntervalRainReduction = 0.03
+	# Default: 0.04
+	# Range: 0.001 ~ 1.0
+	skySmoothing = 0.04
+	# Default: 4
+	# Range: 1 ~ 200
+	minSkyUpdateTicks = 4
+	#Spawns visual-only stick item particles in tornadoes, sub-vortices, satellites, landspouts, dust devils, waterspouts, and squall-line winds.
+	stickDebris = true
+	# Default: 512
+	# Range: 32 ~ 4096
+	stickDebrisRenderRangeBlocks = 512
+	# Default: 80
+	# Range: 0 ~ 1000
+	maxStickDebrisPerTick = 80
+	# Default: 0.55
+	# Range: 0.0 ~ 1.0
+	subVortexStickDensity = 0.55
+	# Default: 0.42
+	# Range: 0.0 ~ 1.0
+	landspoutStickDensity = 0.42
+	# Default: 0.55
+	# Range: 0.0 ~ 1.0
+	dustDevilStickDensity = 0.55
+	# Default: 0.1
+	# Range: 0.0 ~ 1.0
+	waterspoutStickDensity = 0.1
+	# Default: 0.12
+	# Range: 0.0 ~ 1.0
+	squallLineStickDensity = 0.12
+	#Spawns a visual-only dark-brown Weather2 cloud256 debris cloud around tornado ground circulations.
+	tornadoDebrisCloud = true
+	# Default: 640
+	# Range: 32 ~ 4096
+	tornadoDebrisCloudRenderRangeBlocks = 640
+	# Default: 500
+	# Range: 0 ~ 1200
+	maxTornadoDebrisCloudParticlesPerTick = 500
+	# Default: 1.35
+	# Range: 0.0 ~ 2.0
+	tornadoDebrisCloudDensity = 1.35
+	#Uses cutout terrain vertex shaders to sway leaves and grass from local Weather2 storm wind. Client-side visual only.
+	foliageWindShader = true
+	#When Physics Mod is installed, samples its local weather wind domain and skips blocks Physics Mod already simulates.
+	foliageWindUsePhysicsMod = true
+	foliageWindLeaves = true
+	foliageWindGrass = true
+	# Default: 384
+	# Range: 32 ~ 4096
+	foliageWindRenderRangeBlocks = 384
+	# Default: 0.18
+	# Range: 0.0 ~ 1.0
+	foliageWindMaxOffsetBlocks = 0.18
+	# Default: 95.0
+	# Range: 1.0 ~ 500.0
+	foliageWindThrashMph = 95.0
+	# Default: 0.12
+	# Range: 0.001 ~ 1.0
+	foliageWindSmoothing = 0.12
+
+[thunder]
+	immersiveThunder = true
+	# Default: 5.0
+	# Range: 0.0 ~ 20.0
+	secondsPerMile = 5.0
+	# Default: 700
+	# Range: 0 ~ 2400
+	maxDelayTicks = 700
+
+[tornado_immersion]
+	#Adds client-side tornado dread effects tied to real circulation distance and windfield strength.
+	enabled = true
+	#Loops a low tornado roar near active tornado circulations. Uses custom CC0 audio with vanilla fallback accents.
+	roarSound = true
+	#Adds subtle wind-pressure camera rumble near dangerous tornado windfields.
+	cameraRumble = true
+	# Default: 1.35
+	# Range: 0.0 ~ 12.0
+	maxCameraRollDegrees = 1.35
+	#Slightly narrows/pressurizes FOV near the tornado core.
+	fovPressure = true
+	#Darkens and tightens fog near violent or close tornado circulations.
+	fogPressure = true
+	#Adds cool, client-side morning fog around dawn, stronger near wet ground and water.
+	morningFog = true
+	#Scales morning fog thickness without affecting tornado-pressure fog.
+	# Default: 0.62
+	# Range: 0.0 ~ 1.0
+	morningFogDensity = 0.62
+	#Adds extra visual-only near-ground dust near the tornado core. Off by default because Weather2 already renders tornado debris.
+	closeDebris = false
+	#Enables extra client-only effects when the player is inside a tornado damage path/core.
+	insideCoreEffects = true
+	#Draws a shader-style screen overlay with inflow streaks, dust veil, and tornado-eye ring when inside the tornado.
+	inflowShaderOverlay = false
+	#Adds a brief calm hollow visual/audio pocket in the innermost tornado core.
+	eyeEffect = true
+	#Saturates and wobbles tornado roar audio near/inside the core.
+	blowoutAudio = true
+	#Adds an extra roar and camera-pressure layer only when the sampled tornado wind reaches EF3 strength.
+	intenseEf3Effects = true
+	# Default: 136.0
+	# Range: 0.0 ~ 500.0
+	ef3WindThresholdMph = 136.0
+	# Default: 1.35
+	# Range: 1.0 ~ 4.0
+	ef3RoarMultiplier = 1.35
+	# Default: 1.55
+	# Range: 1.0 ~ 4.0
+	ef3CameraMultiplier = 1.55
+	# Default: 1.0
+	# Range: 0.0 ~ 4.0
+	insideFogMultiplier = 1.0
+	# Default: 0.72
+	# Range: 0.0 ~ 1.0
+	inflowOverlayOpacity = 0.72
+	# Default: 0.34
+	# Range: 0.05 ~ 0.9
+	eyeClearRadius = 0.34
+	# Default: 1.0
+	# Range: 0.0 ~ 3.0
+	blowoutAudioIntensity = 1.0
+	#Maximum radius for close tornado roar and camera shake. Keeps intense effects local to the tornado.
+	# Default: 30
+	# Range: 4 ~ 512
+	closeEffectRadiusBlocks = 30
+	# Default: 900
+	# Range: 64 ~ 4096
+	renderRangeBlocks = 900
+	# Default: 90
+	# Range: 0 ~ 1000
+	maxParticlesPerTick = 90
+	#Reduces camera/FOV motion while keeping audio, fog, and debris cues.
+	accessibilityReducedMotion = false
+
+[cycloidal_marks]
+	enabled = true
+	# Default: 6
+	# Range: 4 ~ 9
+	minStage = 6
+	# Default: 48
+	# Range: 0 ~ 256
+	maxBlocksPerTick = 48
+	# Default: 18
+	# Range: 1 ~ 96
+	swathSamples = 18
+	#When true, only converts surface blocks; when false, also removes shallow crops/plants.
+	cosmeticOnly = true
+
+[advancements]
+	enabled = true
+
+[multiplayer]
+	# Default: 1024
+	# Range: 64 ~ 8192
+	syncRangeBlocks = 1024
+	# Default: 20
+	# Range: 5 ~ 1200
+	stateSyncIntervalTicks = 20
+
+[volumetric_downfall]
+	#Renders localized Weather2 rain/hail volumes around active storm cells.
+	enabled = true
+	#Cancels vanilla/global rain rendering only near active Weather2 precipitation cells.
+	bypassVanillaNearCells = true
+	# Default: 768
+	# Range: 64 ~ 4096
+	renderRangeBlocks = 768
+	# Default: 8
+	# Range: 0 ~ 32
+	maxCellsRendered = 8
+	# Default: 18000
+	# Range: 0 ~ 250000
+	maxVerticesPerFrame = 18000
+	# Default: 12
+	# Range: 4 ~ 64
+	heightmapSampleStepBlocks = 12
+	# Default: 0.46
+	# Range: 0.0 ~ 1.0
+	rainOpacity = 0.46
+	# Default: 0.62
+	# Range: 0.0 ~ 1.0
+	hailOpacity = 0.62
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	hailTintThreshold = 0.5
+	#Shader-pack weather signal mode: auto, on, or off. Auto enables compatibility when Oculus/Iris is loaded.
+	shaderCompatibilityMode = "auto"
+
+[low_pressure]
+	#Derives broad low-pressure centers from clustered Weather2 severe storms for forecaster/radar context.
+	enabled = true
+	# Default: 100
+	# Range: 20 ~ 12000
+	scanIntervalTicks = 100
+	# Default: 2
+	# Range: 1 ~ 32
+	minStorms = 2
+	# Default: 4096
+	# Range: 256 ~ 32768
+	maxDisplayRangeBlocks = 4096
+
+[weather_fronts]
+	#Adds moving warm, cold, and occluded fronts that organize storm motion and tornado formation.
+	enabled = true
+	#Server update interval for the front model.
+	# Default: 10
+	# Range: 1 ~ 1200
+	updateIntervalTicks = 10
+	#How long a front can persist after its parent low-pressure system disappears.
+	# Default: 9600
+	# Range: 20 ~ 72000
+	expiryTicks = 9600
+	#Maximum client render range for Weather2-style front bands.
+	# Default: 1800
+	# Range: 128 ~ 4096
+	renderRangeBlocks = 1800
+
+[ai]
+	#Villagers within tornado-threat range try to path into roofed shelter.
+	villagerTornadoShelter = true
+	# Default: 384
+	# Range: 32 ~ 4096
+	villagerShelterRadiusBlocks = 384
+	# Default: 40
+	# Range: 5 ~ 1200
+	villagerShelterScanIntervalTicks = 40
+
+[immersive_vehicles]
+	#Optional Immersive Vehicles/MTS storm physics compatibility. Reflection-only and inactive unless mod id 'mts' is loaded.
+	enabled = true
+	# Default: 2
+	# Range: 1 ~ 1200
+	scanIntervalTicks = 2
+	# Default: 768
+	# Range: 32 ~ 4096
+	scanRangeBlocks = 768
+	# Default: 32
+	# Range: 0 ~ 512
+	maxVehiclesPerTick = 32
+	# Default: 0.38
+	# Range: 0.0 ~ 4.0
+	windForceScale = 0.38
+	# Default: 0.24
+	# Range: 0.0 ~ 4.0
+	liftForceScale = 0.24
+	# Default: 0.16
+	# Range: 0.0 ~ 4.0
+	flipTorqueScale = 0.16
+	# Default: 0.32
+	# Range: 0.0 ~ 4.0
+	maxMotionDeltaPerTick = 0.32
+	#Lets dense tornado/rain cores stall MTS engines by reducing RPM/running state through MTS fields.
+	stallingEnabled = true
+	# Default: 95.0
+	# Range: 0.0 ~ 500.0
+	stallWindMph = 95.0
+	#Pulls riders out of open-top MTS seats only under strong tornado suction.
+	openCockpitEject = true
+	# Default: 145.0
+	# Range: 0.0 ~ 500.0
+	openCockpitEjectMph = 145.0
+	#Applies small, accumulated MTS-native stress damage instead of flat vanilla damage when storm loads get extreme.
+	structuralStressDamage = true
+
+[tree_physics]
+	#Optional Tree Physics compat. Reflection-only and inactive unless mod id 'treephysics' is loaded.
+	enabled = true
+	# Default: 2
+	# Range: 1 ~ 1200
+	scanIntervalTicks = 2
+	#Maximum Tree Physics sublevels processed by storm forces each tick.
+	# Default: 32
+	# Range: 0 ~ 512
+	maxFallingTreeEntities = 32
+	#Below this estimated TPS, complex tree orbit/crush logic is skipped and Tree Physics runs normally.
+	# Default: 15.0
+	# Range: 1.0 ~ 20.0
+	minTps = 15.0
+	#Horizontal drag/orbit force scale for EF0-EF1 winds.
+	# Default: 0.055
+	# Range: 0.0 ~ 2.0
+	weakOrbitScale = 0.055
+	#Vertical lift/orbit force scale for EF2-EF3 winds.
+	# Default: 0.095
+	# Range: 0.0 ~ 3.0
+	strongLiftScale = 0.095
+	#Vertical/outward projectile force scale for EF4-EF5 winds.
+	# Default: 0.165
+	# Range: 0.0 ~ 4.0
+	violentLiftScale = 0.165
+	#Lets high-energy thrown Tree Physics trunks punch through weak structures with capped block edits.
+	structureCrusher = true
+	# Default: 1.8
+	# Range: 0.0 ~ 500.0
+	structureCrusherMinKineticEnergy = 1.8
+	# Default: 36
+	# Range: 0 ~ 512
+	structureCrusherMaxBlocksPerTick = 36
+
+[performance]
+	# Default: 40
+	# Range: 5 ~ 1200
+	stormScanIntervalTicks = 40

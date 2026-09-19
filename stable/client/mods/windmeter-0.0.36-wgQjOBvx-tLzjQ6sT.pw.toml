@@ -1,0 +1,13 @@
+name = "windmeter-0.0.36"
+filename = "windmeter-0.0.36.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/wgQjOBvx/versions/tLzjQ6sT/windmeter-0.0.36.jar"
+hash-format = "sha512"
+hash = "f3dbb129835d97c9e4028f43bed4e90f133dca07a79a5f4ab522c1cf83104f85ffe5b8fab4a508a1ebb4ad07f06a5e2580f9c760ff3b9f6a2960d208a37a18d0"
+
+[update]
+[update.modrinth]
+mod-id = "wgQjOBvx"
+version = "tLzjQ6sT"

@@ -1,0 +1,13 @@
+name = "betterfishtanks-1.3.0-1.21.1-NeoForge"
+filename = "betterfishtanks-1.3.0-1.21.1-NeoForge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Aokk3vZE/versions/9EsXd4dK/betterfishtanks-1.3.0-1.21.1-NeoForge.jar"
+hash-format = "sha512"
+hash = "a7962387f6452182e9cb8901fdcafe44a2f9756117d808f4873e65b749a44f8e1215d9e6d08f68c93989883665d423cdcc8eeb0cda7beaf709330c112d065948"
+
+[update]
+[update.modrinth]
+mod-id = "Aokk3vZE"
+version = "9EsXd4dK"

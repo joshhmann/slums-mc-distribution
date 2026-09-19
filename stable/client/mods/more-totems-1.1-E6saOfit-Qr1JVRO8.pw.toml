@@ -1,0 +1,13 @@
+name = "more-totems-1.1"
+filename = "more-totems-1.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/E6saOfit/versions/Qr1JVRO8/more-totems-1.1.jar"
+hash-format = "sha512"
+hash = "9c1404cc6745bb12668521d858c4763a59c3df4f00e45b397ed8e3fd34105950b3cacfbcd6ca7fe318c2b6e8113d835dab76d54f7ab6da01899f442243f7f42b"
+
+[update]
+[update.modrinth]
+mod-id = "E6saOfit"
+version = "Qr1JVRO8"

@@ -1,0 +1,9 @@
+["Client Features"]
+	#Enables Calendar HUD
+	calendarUi = true
+	#How much your screen shakes
+	# Default: 1.5
+	# Range: 0.0 ~ 8.0
+	shakeIntensity = 1.5
+	#Enables morning fog
+	morningFog = true

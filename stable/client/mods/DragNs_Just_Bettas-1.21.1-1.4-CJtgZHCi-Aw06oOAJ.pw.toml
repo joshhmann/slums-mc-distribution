@@ -1,0 +1,13 @@
+name = "DragNs_Just_Bettas-1.21.1-1.4"
+filename = "DragNs_Just_Bettas-1.21.1-1.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/CJtgZHCi/versions/Aw06oOAJ/DragNs_Just_Bettas-1.21.1-1.4.jar"
+hash-format = "sha512"
+hash = "2981abd12fe5c51ba3116ad923ee8adf518da4509d1b4303f9e1a9da6cef0682bf30ec254d2215ab3b4a75b3818790e67b0a5d61e5fd01f20fabd5fdde55e64d"
+
+[update]
+[update.modrinth]
+mod-id = "CJtgZHCi"
+version = "Aw06oOAJ"

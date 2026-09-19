@@ -1,0 +1,13 @@
+name = "easaddon-0.17.3"
+filename = "easaddon-0.17.3.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/TUoNu1nC/versions/freS6Qmc/easaddon-0.17.3.jar"
+hash-format = "sha512"
+hash = "530e9b9737f966efcbdfc53352f460214f1a2552d64dff9621a2d32f3964d608046876f7411ec0887522986f520e744bb9abfafb25e5af13596be454f1318efd"
+
+[update]
+[update.modrinth]
+mod-id = "TUoNu1nC"
+version = "freS6Qmc"

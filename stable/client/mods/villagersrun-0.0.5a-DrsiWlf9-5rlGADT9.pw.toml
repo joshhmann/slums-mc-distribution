@@ -1,0 +1,13 @@
+name = "villagersrun-0.0.5a"
+filename = "villagersrun-0.0.5a.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/DrsiWlf9/versions/5rlGADT9/villagersrun-0.0.5a.jar"
+hash-format = "sha512"
+hash = "29da40d0496c559e515e4c0e8e8573ce9a4232ec352c70f810c39d29bf3c9560abfb5fa7b64c458adf519ad280dc1998286a1262684e560aab2b160fc257b516"
+
+[update]
+[update.modrinth]
+mod-id = "DrsiWlf9"
+version = "5rlGADT9"
