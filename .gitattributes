@@ -1,0 +1,5 @@
+# Packwiz hashes the exact file bytes. Keep generated metadata/index files
+# in LF form on every platform so GitHub raw downloads hash identically.
+*.pw.toml text eol=lf
+pack.toml text eol=lf
+index.toml text eol=lf
