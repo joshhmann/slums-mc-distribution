@@ -117,3 +117,9 @@ official filename.
   `index.toml`, and updated `pack.toml` to the new index SHA-256.
 - Kept the correction limited to index metadata; no configuration content was
   changed.
+# 2026-09-20 — Optional EMI KubeJS integration guard
+
+- Reproduced the client log error `ReferenceError: "EMIEvents" is not defined` with EMI 1.1.24 and KubeJS 2101.7.2.
+- Confirmed EMI is installed, but no KubeJS-EMI bridge is present to register `EMIEvents`.
+- Wrapped the duplicate-entry cleanup script in a `typeof EMIEvents` guard. EMI remains usable and the script becomes informational instead of aborting client-script loading when the optional bridge is absent.
+- Refreshed the Packwiz index and manifest hash.
