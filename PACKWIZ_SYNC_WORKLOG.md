@@ -106,3 +106,14 @@ only filename discrepancy is Distant Horizons: the manifest says
 `DistantHorizons-3.3.1-1.21.1.jar`, but the official file is
 `DistantHorizons-3.3.1-1.21.1-fabric-neoforge.jar`; the source uses the
 official filename.
+# 2026-09-20 — Packwiz hash normalization fix
+
+- Reproduced the fresh-install failure: Packwiz reported hundreds of failed
+  configuration downloads and specifically rejected `yacl.json5`,
+  `yes_steve_model/blacklist.txt`, and `yigd.json` with invalid hashes.
+- Root cause: the Windows Packwiz refresh generated hashes from CRLF worktree
+  bytes, while GitHub served the repository’s LF blob bytes.
+- Recalculated 354 configuration entries from exact Git blob bytes, rebuilt
+  `index.toml`, and updated `pack.toml` to the new index SHA-256.
+- Kept the correction limited to index metadata; no configuration content was
+  changed.

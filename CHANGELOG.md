@@ -1,5 +1,14 @@
 # Slums MC Changelog
 
+## 1.0.5 - 2026-09-20
+
+### Fixed
+
+- Rebuilt configuration-file hashes in `index.toml` from the exact GitHub-served
+  LF bytes. This fixes Packwiz `Invalid mod file hash` failures on Windows
+  clients for configuration files such as YACL, YIGD, and Yes Steve Model.
+- Updated the `pack.toml` index SHA-256 to match the corrected index.
+
 ## 1.0.4 - 2026-09-20
 
 ### Fixed
