@@ -5,7 +5,8 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "87e019715314631f2c8288cf7c73a52a61b2d61b"
-mode = "metadata:curseforge"
+mode = "url"
+url = "https://edge.forgecdn.net/files/6935/204/fastasyncworldsave-1.21-2.6.jar"
 
 [update]
 [update.curseforge]

@@ -5,7 +5,8 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "aee596339f4593de71dc0b42482dd670fd4d8b64"
-mode = "metadata:curseforge"
+mode = "url"
+url = "https://edge.forgecdn.net/files/8920/358/lootintegrations_moog-2.2.jar"
 
 [update]
 [update.curseforge]

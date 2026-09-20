@@ -5,7 +5,8 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "5c059c2cb2ad8c43e1384b0939bf258801aadfea"
-mode = "metadata:curseforge"
+mode = "url"
+url = "https://edge.forgecdn.net/files/7962/596/structureessentials-1.21.1-5.0.jar"
 
 [update]
 [update.curseforge]

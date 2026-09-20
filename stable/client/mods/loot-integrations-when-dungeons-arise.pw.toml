@@ -5,7 +5,8 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "d5b8cd7712e9c6db2202b77e3ce3c115640b8395"
-mode = "metadata:curseforge"
+mode = "url"
+url = "https://edge.forgecdn.net/files/7925/521/lootintegration_wda-1.8.jar"
 
 [update]
 [update.curseforge]

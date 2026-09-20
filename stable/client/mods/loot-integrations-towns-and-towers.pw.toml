@@ -5,7 +5,8 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "88f4c458834e76b815730cee7d723685a827fa2f"
-mode = "metadata:curseforge"
+mode = "url"
+url = "https://edge.forgecdn.net/files/8920/586/lootintegration_townsandtowers-1.5.jar"
 
 [update]
 [update.curseforge]

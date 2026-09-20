@@ -5,7 +5,8 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "5b73537b908764f2d3fd593a0f56a8b1b034bc50"
-mode = "metadata:curseforge"
+mode = "url"
+url = "https://edge.forgecdn.net/files/8576/077/better-advanced-tooltips-2101.1.0-build.5.jar"
 
 [update]
 [update.curseforge]

@@ -5,7 +5,8 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "8d272bb183986f734d0e414b3d5217ff780e08a4"
-mode = "metadata:curseforge"
+mode = "url"
+url = "https://edge.forgecdn.net/files/8819/067/netmusic-1.5.2-neoforge%2Bmc1.21.1.jar"
 
 [update]
 [update.curseforge]

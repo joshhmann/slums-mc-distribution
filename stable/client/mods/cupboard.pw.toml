@@ -5,7 +5,8 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "6c2d786a161f49470dad92b2edaefdac38a1e79b"
-mode = "metadata:curseforge"
+mode = "url"
+url = "https://edge.forgecdn.net/files/8889/050/cupboard-1.21.1-4.2.jar"
 
 [update]
 [update.curseforge]

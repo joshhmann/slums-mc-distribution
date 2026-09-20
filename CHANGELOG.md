@@ -1,5 +1,13 @@
 # Slums MC Changelog
 
+## 1.0.4-hotfix1 - 2026-09-20
+
+### Fixed
+
+- Pinned the newly added CurseForge-backed client mods to verified ForgeCDN URLs instead of runtime CurseForge metadata resolution.
+- Corrected the encoded `+` in the Net Music filename URL.
+- Refreshed the Packwiz index after the updated metadata files so client hash verification matches the repository contents.
+
 ## 1.0.5 - 2026-09-20
 
 ### Fixed

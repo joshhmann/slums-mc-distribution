@@ -5,7 +5,8 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "6263d1799dcb3b43cfa60948e451c6aa8965146b"
-mode = "metadata:curseforge"
+mode = "url"
+url = "https://edge.forgecdn.net/files/8922/518/lootintegrations_integrated-1.6.jar"
 
 [update]
 [update.curseforge]

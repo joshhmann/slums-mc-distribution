@@ -5,7 +5,8 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "07b5bf1c6ac5160a6cfe1b39ed8c1465dc151b00"
-mode = "metadata:curseforge"
+mode = "url"
+url = "https://edge.forgecdn.net/files/8858/846/ftb-library-neoforge-2101.1.36.jar"
 
 [update]
 [update.curseforge]

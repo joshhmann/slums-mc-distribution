@@ -5,7 +5,8 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "a0a2a57cb89435048819be14666c2a9f8d956828"
-mode = "metadata:curseforge"
+mode = "url"
+url = "https://edge.forgecdn.net/files/8323/152/lootintegrations_yungs-1.6.jar"
 
 [update]
 [update.curseforge]
