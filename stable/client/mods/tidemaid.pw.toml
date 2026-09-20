@@ -1,0 +1,13 @@
+name = "TideMaid"
+filename = "tidemaid-1.2.2-neoforge+mc1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/OOU9OSma/versions/aJCH3a0h/tidemaid-1.2.2-neoforge%2Bmc1.21.1.jar"
+hash-format = "sha512"
+hash = "b97facf7595ec74178a3b1ae431d4a8f04c5248a6e5bb919bc9c1ffda453234346fa15ec22f6ee71c74668a938b59208330042dd835ea15e7f2d9b7e6829bc7d"
+
+[update]
+[update.modrinth]
+mod-id = "OOU9OSma"
+version = "aJCH3a0h"

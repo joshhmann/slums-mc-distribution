@@ -1,13 +1,13 @@
 name = "letsdo-beachparty-neoforge-2.1.4"
-filename = "letsdo-beachparty-neoforge-2.1.4.jar"
+filename = "letsdo-beachparty-neoforge-2.1.5.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/GyKzAh3l/versions/oKpAot1a/letsdo-beachparty-neoforge-2.1.4.jar"
+url = "https://cdn.modrinth.com/data/GyKzAh3l/versions/HN4rzKRl/letsdo-beachparty-neoforge-2.1.5.jar"
 hash-format = "sha512"
-hash = "f5c8f90dca40cf74beb4c49c60459f68b06d03ab9e1e590f493068e01b69d1d9be4f944908baf91714c1d1e5dea858ca054becf5c00f8228ce691296ad275e20"
+hash = "b992f87e638c3642816046b44bec1a3f41df01c61204bcedf3fee5ee7b229f64c0d327fcb3fbb758c7ded5b9d50da6b1a310ea23dcfbba8177022e8f9468ef36"
 
 [update]
 [update.modrinth]
 mod-id = "GyKzAh3l"
-version = "oKpAot1a"
+version = "HN4rzKRl"

@@ -1,13 +1,13 @@
 name = "letsdo-wildernature-neoforge-1.1.5"
-filename = "letsdo-wildernature-neoforge-1.1.5.jar"
+filename = "letsdo-wildernature-neoforge-1.1.6.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/AAiRU4aQ/versions/hVASh9XY/letsdo-wildernature-neoforge-1.1.5.jar"
+url = "https://cdn.modrinth.com/data/AAiRU4aQ/versions/jwvFJJGi/letsdo-wildernature-neoforge-1.1.6.jar"
 hash-format = "sha512"
-hash = "aae0fbf63605d1e9ccd59522b897b890b21dc9b3878b3bdaafb887c034ae31877b20a38e03887476314226410e3581b2b27e89a6024dcdad6d787b9295694c31"
+hash = "e44694b5e2b45072ff82b0cd36e6b444954dab13108891e30467f9845d9120df575d92165ecb160f8f91ab1191be346125d1f9d83c0c95a059ca0c0329e63626"
 
 [update]
 [update.modrinth]
 mod-id = "AAiRU4aQ"
-version = "hVASh9XY"
+version = "jwvFJJGi"

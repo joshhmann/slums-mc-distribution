@@ -1,0 +1,13 @@
+name = "Don't Punch My TACZ"
+filename = "dont-punch-my-tacz-v0.5.2-1.21.1-neo.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/BdT7bXL2/versions/WRIDtX99/dont-punch-my-tacz-v0.5.2-1.21.1-neo.jar"
+hash-format = "sha512"
+hash = "230943823ecc47d2043639dcc159a5bcff093ceffa9ae38760635cea8726c5bd29f97278bfd9f603bcfa6fdc61efb74eb70bbedb2d27ec3c4068bb33ce5df7ad"
+
+[update]
+[update.modrinth]
+mod-id = "BdT7bXL2"
+version = "WRIDtX99"

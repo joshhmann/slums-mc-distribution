@@ -1,13 +1,13 @@
 name = "letsdo-candlelight-neoforge-2.1.12"
-filename = "letsdo-candlelight-neoforge-2.1.12.jar"
+filename = "letsdo-candlelight-neoforge-2.1.13.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/qwbArkQk/versions/cLNC7p0T/letsdo-candlelight-neoforge-2.1.12.jar"
+url = "https://cdn.modrinth.com/data/qwbArkQk/versions/Cxu0FvZB/letsdo-candlelight-neoforge-2.1.13.jar"
 hash-format = "sha512"
-hash = "f6a74eb070fcffd015af400688e876878f8bf421578e54560fedc85c8a0015b333f809432c4820911adefcd044c97378e685ee42f4953812e9639b4800694b5a"
+hash = "805a0b8a13c6024a68eb8210b28dc3b37e451d2b2341d8dac9aea586cd355ddaa867c3fca9b38a4aa587b33281132385837e10489f4f09e331246baf2194719c"
 
 [update]
 [update.modrinth]
 mod-id = "qwbArkQk"
-version = "cLNC7p0T"
+version = "Cxu0FvZB"

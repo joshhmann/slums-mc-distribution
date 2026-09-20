@@ -1,13 +1,13 @@
 name = "letsdo-brewery-neoforge-2.1.9"
-filename = "letsdo-brewery-neoforge-2.1.9.jar"
+filename = "letsdo-brewery-neoforge-2.1.11.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/b7NV2plI/versions/vzXZ4Pak/letsdo-brewery-neoforge-2.1.9.jar"
+url = "https://cdn.modrinth.com/data/b7NV2plI/versions/4TjPSAN6/letsdo-brewery-neoforge-2.1.11.jar"
 hash-format = "sha512"
-hash = "10011c6b8064c14d142049f9532f966dd8c44e2ac40f6afb543061c4703e4db5348d29448db520c18e49dc3282f2299a006a7d05328d9a47c615376e3e487fd9"
+hash = "b3df0d30108b8ea96624b198af85b4ee320bd584ff1cd12d0a9f15d780271ed31f87258be2b718b864409485b8b1ec892095620f29ebb679c21d895e5e124977"
 
 [update]
 [update.modrinth]
 mod-id = "b7NV2plI"
-version = "vzXZ4Pak"
+version = "4TjPSAN6"
