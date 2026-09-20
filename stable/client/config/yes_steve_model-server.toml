@@ -1,5 +1,5 @@
 #The default model ID when a player first enters the game
-DefaultModelId = "default"
+DefaultModelId = "misc_2_steve"
 #The default model texture when a player first enters the game
 DefaultModelTexture = "default"
 #Whether or not players are allowed to switch models

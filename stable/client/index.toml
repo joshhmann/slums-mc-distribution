@@ -2473,10 +2473,6 @@ file = "config/tacz_x_guns_lights_addon-client.toml"
 hash = "b9f6ccb0077c6376d89aef79874a1b39ce48b2be28157d9e6b4523217b7a0694"
 
 [[files]]
-file = "config/taczaddon-common.toml"
-hash = "29b1e241d35c1e56436ecbacddf0ae96117600e561e74b1d1903312b55f8be79"
-
-[[files]]
 file = "config/taczruntimecompat-common.toml"
 hash = "2330d2b3e1df2e260aa0f25a8c48ed563a0dede411af48c30cdd2d3e45d36763"
 
@@ -2734,7 +2730,7 @@ hash = "c28bbb859953b8d39489a13bfebde604fdbd1d9d99975b6b4f8061ce64c4aa7e"
 
 [[files]]
 file = "config/yes_steve_model-server.toml"
-hash = "996c002c11ff6dda12b0207183850f1cd2ddb25a9bea56a380f33cf733a02190"
+hash = "7115654da3ae66135ac9f28b817d5bc10ec19f4362e769711437cecf6e539c12"
 
 [[files]]
 file = "config/yes_steve_model/blacklist.txt"
@@ -6575,11 +6571,6 @@ hash = "d0a72695c3e5d981e9590904e66873f69d7847aa8fed1256d5705290358e6d26"
 metafile = true
 
 [[files]]
-file = "mods/taczaddon-1.1.8-fix2-1.21.1-neoforge-3Ihyt5WL-mo66IMw3.pw.toml"
-hash = "19e7e6b985c17614e3fae57df17a7481ebccba45c3cc8fad9f84d0391451acad"
-metafile = true
-
-[[files]]
 file = "mods/tectonic-3.0.26-neoforge-21.1-lWDHr9jE-vNrkxC3z.pw.toml"
 hash = "87b246efffffa6598c441ff5707192e415b47872d06b37556f089b677897ca1b"
 metafile = true
@@ -6683,3 +6674,15 @@ metafile = true
 file = "shaderpacks/ComplementaryUnbound_r5.9-R6NEzAwj-w6dISYOd.pw.toml"
 hash = "a07dabdaf7f2dafe890a6575f8294cc2b98a229b575a840a59f108a7f7f6de0f"
 metafile = true
+
+[[files]]
+file = "kubejs/client_scripts/emi.js"
+hash = "3905b0dadded0fdd4c26d0364bc46090c51266c8a00b1e36f48cb849cd060a23"
+
+[[files]]
+file = "kubejs/server_scripts/recipes.js"
+hash = "b765f25d95b6210b4049897f395ddbe8d29a174ab426c6a16f62cdf640aa293b"
+
+[[files]]
+file = "kubejs/server_scripts/tags.js"
+hash = "4be0eb14cea2e958049998e8a5c1be3080010a079680d9f5c93edc24ebbe5b84"
