@@ -123,3 +123,18 @@ official filename.
 - Confirmed EMI is installed, but no KubeJS-EMI bridge is present to register `EMIEvents`.
 - Wrapped the duplicate-entry cleanup script in a `typeof EMIEvents` guard. EMI remains usable and the script becomes informational instead of aborting client-script loading when the optional bridge is absent.
 - Refreshed the Packwiz index and manifest hash.
+
+# 2026-09-20 — Packwiz metadata CRLF/LF repair
+
+- Rechecked all 313 client mod metadata entries against the bytes served by
+  GitHub Raw.
+- Found 197 stale metadata hashes caused by Windows CRLF worktree bytes being
+  hashed while GitHub Raw served LF bytes; one additional entry was corrected
+  during normalization.
+- Recalculated the metadata hashes from LF bytes, rebuilt `index.toml`, and
+  updated `pack.toml` to index hash
+  `4312b63a0d32c33723cd770e34ae0f6cbd68a60b08dea422b95a5d2c22ae5213`.
+- Added `.gitattributes` rules forcing Packwiz metadata, `index.toml`, and
+  `pack.toml` to LF so future Windows refreshes cannot recreate this failure.
+- Verified all 313 published metadata hashes against GitHub Raw: 313 checked,
+  0 mismatches.
