@@ -138,3 +138,12 @@ official filename.
   `pack.toml` to LF so future Windows refreshes cannot recreate this failure.
 - Verified all 313 published metadata hashes against GitHub Raw: 313 checked,
   0 mismatches.
+
+# 2026-09-20 — Remaining nine Packwiz file hashes
+
+- Reproduced the final nine download failures after the metadata repair.
+- Corrected the hashes for the NoChatReports README, Konkrete language files,
+  structure layout optimizer config, Creeper Overhaul configs, EMI CSS, and
+  Creeper Overhaul language/config files.
+- Updated `pack.toml` to index hash
+  `6aaf06372d43eb1e1447d508f8e2d681fc68d728f7edd26d0bd38c159dc2b61c`.

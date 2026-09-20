@@ -30,7 +30,7 @@ hash = "df32843b853e0a493ef3a9b1e39276818294353fbb0d833f7f61e77da0f5bca1"
 
 [[files]]
 file = "config/NoChatReports/README.md"
-hash = "f0decb31d974351dd9337caf02320d22470adec6b96411bb84596cdc73d77dac"
+hash = "c52b76ccad2bd1063a22c7f6bb9e7c5db6b00fb53a6fd605585972ee0e5fc01f"
 
 [[files]]
 file = "config/Weather2/Debug.toml"
@@ -1294,11 +1294,11 @@ hash = "5f08d0878d7f89c6b4c947a49dce368d7738255d44fecf9aad59ec6ae8a4fcef"
 
 [[files]]
 file = "config/creeperoverhaul.jsonc"
-hash = "70802cbcd641ec8eb0b7a364aad2f2a10ca5ed42e0447ccc8ac8dc423fdfe3bc"
+hash = "d8088bd461dd7666552c4174bac6549e55112728e07aa3addd0e32a805c230fc"
 
 [[files]]
 file = "config/crepperoverhaul-client.jsonc"
-hash = "39bd796721fb3daba63606bf40e5e41973cd2a4ec2591d54c22e4a7456407ae3"
+hash = "8ebd8ce17fd98dc18dde0d3271b9237fbc98d9664647940308c9a4d7804dc200"
 
 [[files]]
 file = "config/cristellib/adorabuild_structures/structure_placement_config.json5"
@@ -1702,7 +1702,7 @@ hash = "f7fee118d87180684244d0a546bec41129534a9a41c58b7ae2dd76148e4f33ff"
 
 [[files]]
 file = "config/emi.css"
-hash = "11408c604f5df3c04fc041545cd7c98dde14a85574a9114c1ec8ef24afcb7033"
+hash = "b2fefce8b997851759990d1ec0c71d4be631e435857eb7b19516e4806986ac34"
 
 [[files]]
 file = "config/emi_loot_config.toml"
@@ -1942,19 +1942,19 @@ hash = "202b5a7ab19c1cfff344bd6546be24f8c10a3e92632551ca83ab636016e9d72f"
 
 [[files]]
 file = "config/konkrete/locals/de_de.local"
-hash = "9cf580b889772edd244b5ea7cf42439bbae7bf2834bd759b819052d8f147e5fd"
+hash = "79a34cfd15c2d9c06498dc221be79279507d9b57666cd44f8d2c2cf95d3582ef"
 
 [[files]]
 file = "config/konkrete/locals/en_us.local"
-hash = "7e47765e16c56722a24ff7343191913b00ef2c8493b7172c641d61c8b583b0d4"
+hash = "fdf1864fd049b3f1b9af1f8db6c5125a627be7d06a451c778da3329843d3c39a"
 
 [[files]]
 file = "config/konkrete/locals/pl_pl.local"
-hash = "29e0e9f6e599f34ce351814cd4bbfa1bbea884122aff4b5072bff105d94f6862"
+hash = "d38a7776e362e4de6082078d803c1c9358d9d40526edfe4bdfd29c552aef76d8"
 
 [[files]]
 file = "config/konkrete/locals/pt_br.local"
-hash = "d53707bca34d3d11ef17642d819a4444550bf5d1c3557d0d8c19c5d47e46bbc4"
+hash = "dca55a2792451b31424cd5c24037141ec57cdca51955d062dd908fa9ca6a3e9c"
 
 [[files]]
 file = "config/l2configs/l2core-client.toml"
@@ -2418,7 +2418,7 @@ hash = "d9dac360395eece6921915a07db4743ed9cbfc0f4bb747c780b6484c2299b04e"
 
 [[files]]
 file = "config/structure_layout_optimizer.jsonc"
-hash = "7aaf099dc3f0ddd35a41dd4c7bb7f3083884d763890c1ba952e08bd7ec0c35ed"
+hash = "5a9058652bc0b88b8810e0b94eba0e1a90cbff2472845c53a7e67442682a1579"
 
 [[files]]
 file = "config/structureessentials.json"
