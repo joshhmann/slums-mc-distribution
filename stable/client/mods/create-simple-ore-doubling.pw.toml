@@ -1,0 +1,13 @@
+name = "Create: Simple Ore Doubling"
+filename = "create_simple_ore_doubling-1.6.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/7jXyH8Xk/versions/vfGKdqIi/create_simple_ore_doubling-1.6.0-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "0aded226ff09da90291e7375ea9f5f65fecc43ee05004c667913e4b8dbf5ac44df283a6bff7fae0a6b698107593807349e43fae0b14b8f8d5468c9103d5612b1"
+
+[update]
+[update.modrinth]
+mod-id = "7jXyH8Xk"
+version = "vfGKdqIi"

@@ -1,13 +1,13 @@
 name = "letsdo-farm_and_charm-neoforge-1.1.23"
-filename = "letsdo-farm_and_charm-neoforge-1.1.23.jar"
+filename = "letsdo-farm_and_charm-neoforge-1.1.25.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/HJetCzWo/versions/DlXdACqc/letsdo-farm_and_charm-neoforge-1.1.23.jar"
+url = "https://cdn.modrinth.com/data/HJetCzWo/versions/GMgZHF7X/letsdo-farm_and_charm-neoforge-1.1.25.jar"
 hash-format = "sha512"
-hash = "e7724b49a292103438e8ba982ca9a58bacde15e5588a8a610dd628da6f92110b70a116c25d3c150ae04b6ae0c33953eb5858ec2b66bc763f7aaa77e5050dc39c"
+hash = "9d1cb8cda8ec574880cdd271128fff3d44d10cbc4f302704ce4fe00dd785f59737f94d67a0f2d2b8d2a875a151bbdf70704ea284aed0644ddd96e4c052dc5c60"
 
 [update]
 [update.modrinth]
 mod-id = "HJetCzWo"
-version = "DlXdACqc"
+version = "GMgZHF7X"

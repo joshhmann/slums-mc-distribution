@@ -1,5 +1,47 @@
 # Slums MC Changelog
 
+## 1.0.3 - 2026-09-20
+
+### Added
+
+- Reconciled the Packwiz source against the tested `Slums MC - update 1`
+  instance.
+- Added the tested KubeJS stack: KubeJS, Rhino, KubeJS Create, KubeJS Additions,
+  KubeJS Delight, KubeJS Diesel Generators, LootJS, and PonderJS.
+- Added the tested Create and TACZ integrations: Create Gunpowder, Create
+  Central Kitchen, Create Simple Ore Doubling, Create Immersive TaCZ
+  Integration, and Don't Punch My TACZ.
+- Added the tested Sophisticated Backpacks/Storage integrations and supporting
+  libraries: Sophisticated Backpacks, Sophisticated Core, Sophisticated Storage,
+  their Create integrations, Sophisticated Inventory Interactions, and MCPitanLib.
+- Added the tested utility/client mods: Controlling, Extreme Sound Muffler,
+  Punchy, Visual Workbench, Better Advanced Tooltips, Searchables, and Mod
+  Sound Volume Options.
+- Added the tested Create Sophisticated Backpacks compatibility mod, Create SA
+  Tank Fix, Net Music, and the tested KubeJS Diesel Generators release.
+
+### Changed
+
+- Updated Packwiz-managed existing mod metadata using `packwiz update --all`
+  and rebuilt `index.toml`.
+- Pinned the new additions to the exact tested files instead of selecting
+  unverified latest versions.
+- Removed duplicate dependency metafiles for Create and Create Diesel
+  Generators; each JAR is represented once in the Packwiz index.
+- Updated the Packwiz index SHA-256 in `pack.toml`.
+
+### Verification notes
+
+- ProbeJS was included because it is present in the supplied canonical tested
+  manifest. It can be removed later if the pack is finalized without
+  development tooling.
+- The manual JARs identified during comparison were resolved from their
+  Modrinth or CurseForge project records and added by exact filename.
+- Distant Horizons is represented by its official
+  `DistantHorizons-3.3.1-1.21.1-fabric-neoforge.jar` filename; the supplied
+  manifest used a shortened filename that does not exist in the official
+  Modrinth/CurseForge file record.
+
 ## 1.0.2 - 2026-09-20
 
 ### Added

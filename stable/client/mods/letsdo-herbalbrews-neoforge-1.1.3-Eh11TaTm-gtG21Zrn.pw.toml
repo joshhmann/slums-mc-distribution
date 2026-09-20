@@ -1,13 +1,13 @@
 name = "letsdo-herbalbrews-neoforge-1.1.3"
-filename = "letsdo-herbalbrews-neoforge-1.1.3.jar"
+filename = "letsdo-herbalbrews-neoforge-1.1.4.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/Eh11TaTm/versions/gtG21Zrn/letsdo-herbalbrews-neoforge-1.1.3.jar"
+url = "https://cdn.modrinth.com/data/Eh11TaTm/versions/kGYbyn9P/letsdo-herbalbrews-neoforge-1.1.4.jar"
 hash-format = "sha512"
-hash = "cfcfc47c24daff1b82849d36cbe5aa1d731a8bfcd814bc6afda2909ae18c4ff29e928122a3c37bb622c14738825f0a0db00547b30b54cd06cdaafb4af155e201"
+hash = "281bac102511bf7753371ab7ed488d6990dfb0caae0f216b931d3a05c74adfbe28330910e76d7eea0268f0a7d64997a7c0d7d9b3fc9efb43d9711487f36b4989"
 
 [update]
 [update.modrinth]
 mod-id = "Eh11TaTm"
-version = "gtG21Zrn"
+version = "kGYbyn9P"

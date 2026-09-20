@@ -1,13 +1,13 @@
 name = "pmshaders-1.1.1"
-filename = "pmshaders-1.1.1.jar"
+filename = "pmshaders-1.1.2.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/P8ibnjWb/versions/antxPts2/pmshaders-1.1.1.jar"
+url = "https://cdn.modrinth.com/data/P8ibnjWb/versions/vRuSLL1o/pmshaders-1.1.2.jar"
 hash-format = "sha512"
-hash = "a468644acb6355e2f725104554a6dd98ee63017d0d858da3a69262086ab791b573944c2817920bc30a9d39740ab86208556940db7a5e59c4054ebcab84caa2dd"
+hash = "c834aea70085b390009b4a7ff377655f49ff8dec80b94d67b8ac0f76569ef898579d2007906ed04f874c17ff00dddb4ff5d8199faeb0c4caff174a546f2724a8"
 
 [update]
 [update.modrinth]
 mod-id = "P8ibnjWb"
-version = "antxPts2"
+version = "vRuSLL1o"
