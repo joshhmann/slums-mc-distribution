@@ -147,3 +147,14 @@ official filename.
   Creeper Overhaul language/config files.
 - Updated `pack.toml` to index hash
   `6aaf06372d43eb1e1447d508f8e2d681fc68d728f7edd26d0bd38c159dc2b61c`.
+
+# 2026-09-20 — Raw branch endpoint and clean smoke test
+
+- The mutable `raw.githubusercontent.com/.../main/...` URL was observed serving
+  a stale intermediate `pack.toml` while `refs/heads/main` served the current
+  matching index. Use the explicit `refs/heads/main` form in new installers and
+  documentation.
+- Ran the Packwiz bootstrap against the explicit `refs/heads/main` channel.
+  All 1,669 managed entries completed successfully; the materialized client
+  tree contained 1,664 files and approximately 1.07 GB with no hash failures.
+

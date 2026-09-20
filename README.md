@@ -4,7 +4,7 @@ This repository contains the sanitized, read-only client Packwiz distribution fo
 
 Packwiz update URL:
 
-`https://raw.githubusercontent.com/joshhmann/slums-mc-distribution/main/stable/client/pack.toml`
+`https://raw.githubusercontent.com/joshhmann/slums-mc-distribution/refs/heads/main/stable/client/pack.toml`
 
 The friend installer remains distributed through NextExplorer. It will configure existing and new Prism instances to use the Packwiz URL above for client updates.
 
