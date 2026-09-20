@@ -5957,7 +5957,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-sophisticated-backpacks-compat.pw.toml"
-hash = "7e6cf9b0d48cce70273efbc86f834d138aaec540cecfe693d23389ef78181c6f"
+hash = "bc0fd882db4dc0d65cf635b880781cd13d5155f18cebba4d71ebbec535051014"
 metafile = true
 
 [[files]]
@@ -6259,7 +6259,7 @@ metafile = true
 
 [[files]]
 file = "mods/kubejs-diesel-generators.pw.toml"
-hash = "7946ff93620f4f5cc53ce0d4e3adfe3c1056f441cffb5004ac02adc25000fba3"
+hash = "8eeae6adad5ee14f8c3601f3c7c986f8447d17e8845e4ae1ea9cae90a821bdf5"
 metafile = true
 
 [[files]]

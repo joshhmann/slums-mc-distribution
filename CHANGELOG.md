@@ -1,5 +1,13 @@
 # Slums MC Changelog
 
+## 1.0.4 - 2026-09-20
+
+### Fixed
+
+- Pinned KubeJS Diesel Generators and Create Sophisticated Backpacks Compat to
+  verified public ForgeCDN URLs so clean Packwiz exports and fresh installs do
+  not depend on a pre-populated CurseForge cache.
+
 ## 1.0.3 - 2026-09-20
 
 ### Added

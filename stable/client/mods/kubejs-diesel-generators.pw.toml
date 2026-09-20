@@ -5,7 +5,8 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "14cd625ef2cfa0637dcc4855d5008edb089d7268"
-mode = "metadata:curseforge"
+mode = "url"
+url = "https://edge.forgecdn.net/files/8661/616/dg_js-1.21.1-1.2.4.jar"
 
 [update]
 [update.curseforge]

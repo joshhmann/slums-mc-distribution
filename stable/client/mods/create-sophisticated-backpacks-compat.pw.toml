@@ -5,7 +5,8 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "401e8b83ab79c13bf71ba6209f4c8c487c001b38"
-mode = "metadata:curseforge"
+mode = "url"
+url = "https://edge.forgecdn.net/files/6844/021/create_sophback_compat-1.0.jar"
 
 [update]
 [update.curseforge]
