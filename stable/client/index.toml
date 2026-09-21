@@ -6991,3 +6991,7 @@ metafile = true
 file = "shaderpacks/ComplementaryUnbound_r5.9-R6NEzAwj-w6dISYOd.pw.toml"
 hash = "f240bd900d507442751e576b030f856d7bdb3ce2318d8832a3e3f51779d10822"
 metafile = true
+
+[[files]]
+file = "servers.dat"
+hash = "0fcff7b62156370763148b3f4a8d33c9bd8235afef6202e9dee7ff2e1de3257a"

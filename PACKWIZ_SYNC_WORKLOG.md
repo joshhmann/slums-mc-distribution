@@ -158,3 +158,9 @@ official filename.
   All 1,669 managed entries completed successfully; the materialized client
   tree contained 1,664 files and approximately 1.07 GB with no hash failures.
 
+# 2026-09-20 — Default multiplayer server
+
+- Added a standard Minecraft `servers.dat` containing `Slums MC` at
+  `75.3.243.94:25569`.
+- Added the binary server list to the Packwiz index and refreshed the pack
+  index hash.
