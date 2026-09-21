@@ -3,6 +3,18 @@
 // touching worlds, options.txt, keybindings, or player-owned config files.
 
 ServerEvents.recipes(event => {
+  // Create Immersive TaCZ 1.6 ships four casing-fill recipes using the old
+  // `fluid_stack` nested-recipe format. NeoForge/Create 6.0.10 rejects those
+  // nested recipes during KubeJS inspection. Remove only the broken addon
+  // recipes; the four Slums MC replacements below preserve the same gameplay
+  // path without touching the addon casing recipes or other ammo recipes.
+  [
+    'createimmersivetacz:ammo/pneumatic_pistol_casing_fill',
+    'createimmersivetacz:ammo/rimmed_blunt_ap_casing_fill',
+    'createimmersivetacz:ammo/slap_casing_fill',
+    'createimmersivetacz:ammo/twelve_gauge_shell_fill'
+  ].forEach(id => event.remove({ id: id }))
+
   // Canonical ingredient policy. Original food items remain valid in tags and
   // inventories; this does not rewrite or delete player-owned item stacks.
   // Standard Create flour output from wheat. Other flour-producing recipes
