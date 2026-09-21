@@ -1701,18 +1701,6 @@ file = "config/easaddon-server.toml"
 hash = "f7fee118d87180684244d0a546bec41129534a9a41c58b7ae2dd76148e4f33ff"
 
 [[files]]
-file = "config/emi.css"
-hash = "b2fefce8b997851759990d1ec0c71d4be631e435857eb7b19516e4806986ac34"
-
-[[files]]
-file = "config/emi_loot_config.toml"
-hash = "650c526b611016252645f3de78d77f736ef3981ff6bd777a5da3d79e306ea82f"
-
-[[files]]
-file = "config/emi_ores-client.json"
-hash = "2a142816c58a75278aaf6fa283dc5e3b8e7fbaf8887d04fe29b200414d1aaa42"
-
-[[files]]
 file = "config/enchdesc.json"
 hash = "7116b95a9b6797af8db84e410a2ca2fdf6f813461e37cd04bff5af933f31567b"
 

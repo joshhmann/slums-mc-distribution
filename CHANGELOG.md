@@ -1,5 +1,12 @@
 # Slums MC Changelog
 
+## 1.0.4-hotfix2 - 2026-09-20
+
+### Changed
+
+- Removed the three Packwiz-managed EMI configuration files from the client distribution; the EMI mods remain installed.
+- Refreshed the Packwiz index and bumped the client hotfix version.
+
 ## 1.0.4-hotfix1 - 2026-09-20
 
 ### Fixed
