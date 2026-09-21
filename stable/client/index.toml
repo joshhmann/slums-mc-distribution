@@ -5342,7 +5342,7 @@ hash = "ef2495fe8549ff47b3e1ded36b893d65170cd13a5a56a90082b3c956469c2bb4"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
-hash = "b765f25d95b6210b4049897f395ddbe8d29a174ab426c6a16f62cdf640aa293b"
+hash = "3c699e3e542be4cb5a3c6938457876ac1a86f1d7ec2c8353d952a6c567cec934"
 
 [[files]]
 file = "kubejs/server_scripts/tags.js"
@@ -6964,6 +6964,10 @@ metafile = true
 file = "mods/zfastnoise-1.0.13+1.21.1+neoforge-OnlVIpq5-9vSFkDAr.pw.toml"
 hash = "4334fc4fbc1e0bafa236fa1ed19412b11e942b29a52f01078fac290bd87a8c79"
 metafile = true
+
+[[files]]
+file = "servers.dat"
+hash = "0fcff7b62156370763148b3f4a8d33c9bd8235afef6202e9dee7ff2e1de3257a"
 
 [[files]]
 file = "shaderpacks/Bliss_v2.1.2_-Chocapic13_Shaders_edit-ZvMtQlho-kC2Y8q1P.pw.toml"

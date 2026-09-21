@@ -158,3 +158,24 @@ official filename.
   All 1,669 managed entries completed successfully; the materialized client
   tree contained 1,664 files and approximately 1.07 GB with no hash failures.
 
+# 2026-09-20 — Default multiplayer server
+
+- Added a standard Minecraft `servers.dat` containing `Slums MC` at
+  `75.3.243.94:25569`.
+- Added the binary server list to the Packwiz index and refreshed the pack
+  index hash.
+
+# 2026-09-20 — Create Immersive TaCZ recipe compatibility
+
+- Confirmed the four KubeJS error entries all came from the same outdated
+  nested `fluid_stack` format in Create Immersive TaCZ 1.6:
+  `pneumatic_pistol_casing_fill`, `rimmed_blunt_ap_casing_fill`,
+  `slap_casing_fill`, and `twelve_gauge_shell_fill`.
+- Added targeted `event.remove({ id: ... })` calls to `recipes.js` for only
+  those four broken addon recipes.
+- Kept the addon casing recipes, all other TACZ/Create recipes, and the four
+  Slums MC replacement cartridge recipes intact.
+- Refreshed the Packwiz SHA-256 entry for `recipes.js` in both client indexes.
+- Verification required on the next client launch: the four old
+  `createimmersivetacz:*_casing_fill` parser errors should be gone, while the
+  log should still report the five Slums MC recipes added successfully.
