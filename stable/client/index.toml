@@ -1169,6 +1169,10 @@ file = "config/companion-common.yaml"
 hash = "eb6244a078fbcd4e6e418fb4327e2480e26c6a35e4676b3e94992ab153201a9e"
 
 [[files]]
+file = "config/compatdatapacks76/compatdatapacks76.json"
+hash = "aaa3a3515156afdfaa62cb413a5176ae40c37d7da1fbe4ebdf6d2337fbb5f08c"
+
+[[files]]
 file = "config/compatdelight-common.toml"
 hash = "24663290d2cdb4d5bc6c5a379b264b0e9dfad97a520f69fb8901d8c907c6edd0"
 
@@ -5674,6 +5678,11 @@ hash = "3b8d43ed20ea3883758d3b3d8cd24c08c7622927073a6648f53f204dbaf21c5f"
 metafile = true
 
 [[files]]
+file = "mods/advancedperipherals.pw.toml"
+hash = "7c3f307f89037a61ad456cdd19470c798d4a9fa5c3e73c8f28318a0b62eb8e59"
+metafile = true
+
+[[files]]
 file = "mods/aether-1.21.1-1.5.10-neoforge-YhmgMVyu-K5X5qMwG.pw.toml"
 hash = "89a2e46b5926506b9b74cf1802d1d16b133d66f330f3a0a2116746506984f196"
 metafile = true
@@ -5804,8 +5813,28 @@ hash = "152850725adce113d1154974a4899d49ff28596908c378f8dfd45a97619d6640"
 metafile = true
 
 [[files]]
+file = "mods/carry-on.pw.toml"
+hash = "b002e49c690e9107c6ea56ad7ff1320400200b7bff371800c9d9c237abd8d7f5"
+metafile = true
+
+[[files]]
+file = "mods/cc-cbc.pw.toml"
+hash = "851e42aeeaf392b36045c3276da67faefa467680fb1c09f841ee06761d3c8a82"
+metafile = true
+
+[[files]]
+file = "mods/cc-sable.pw.toml"
+hash = "7ade465d4635d89a3b50078b2e8043313c1e4f266654aabbbd1d153206ad123d"
+metafile = true
+
+[[files]]
 file = "mods/cc-tweaked-1.21.1-forge-1.120.2-gu7yAYhd-1ewzHZYg.pw.toml"
 hash = "8903fcd88edc6430f9b725aff7ebcf87d622006b700014a1a47cb5fcb4612db7"
+metafile = true
+
+[[files]]
+file = "mods/cccbridge.pw.toml"
+hash = "50c257005a7b27194c7136c6508a95c591be0fc809bfb565ca91c876f0962410"
 metafile = true
 
 [[files]]
@@ -5884,6 +5913,16 @@ hash = "fdf240f131a655d8c7fc4207f660dbbc453e849d56667454e3a7e1106e9a4580"
 metafile = true
 
 [[files]]
+file = "mods/create-avionics.pw.toml"
+hash = "7aa8598b2e35ba89fe38274156ef9092b7a2b3c410bc507961e0cca691bee159"
+metafile = true
+
+[[files]]
+file = "mods/create-ccbr.pw.toml"
+hash = "d62ea3dddf66d8a3b695f0884a522e6581571450e3cf42e04a54255cb4845641"
+metafile = true
+
+[[files]]
 file = "mods/create-central-kitchen.pw.toml"
 hash = "ec00a16a28c8b8671948f2d12df41ed4faeaad6c4beb3810b2a0e917945b3d45"
 metafile = true
@@ -5896,6 +5935,11 @@ metafile = true
 [[files]]
 file = "mods/create-connected.pw.toml"
 hash = "6ac362d60bc8b13e03a5b6b9cdf9c7676f65d3e89e87c66f18514e7ee164cdb0"
+metafile = true
+
+[[files]]
+file = "mods/create-copper-zinc.pw.toml"
+hash = "58fb51095bc05bf128661ed8fbc3ff91d0bafa4d453086c28dbbe9b420447221"
 metafile = true
 
 [[files]]
@@ -5929,6 +5973,11 @@ hash = "69fc8e5bb97d5ed685c2344572caa78498beb58cda9ab4735076426f0b555ea5"
 metafile = true
 
 [[files]]
+file = "mods/create-more-automation.pw.toml"
+hash = "33abebb1c02467a610338160890bc62d879646a749aa69ab18845b6e526504b1"
+metafile = true
+
+[[files]]
 file = "mods/create-new-age-1.2.0+neoforge-mc1.21.1-FTeXqI9v-IwtuwMZy.pw.toml"
 hash = "5c44d353f9f50511ff112075c7c17c4a48f10b5a24b0009c1b7bb2a7d226b6cd"
 metafile = true
@@ -5936,6 +5985,11 @@ metafile = true
 [[files]]
 file = "mods/create-ore-excavation.pw.toml"
 hash = "10d3389f72e8e8f78518f5b6786ccec4e62dbad117491d2970e8e1f75e390251"
+metafile = true
+
+[[files]]
+file = "mods/create-railways-navigator.pw.toml"
+hash = "9e844f43178bd8bef4a060c93477e6e1d0a251a86d4774aa849d341d3c7f97cf"
 metafile = true
 
 [[files]]
@@ -5956,6 +6010,26 @@ metafile = true
 [[files]]
 file = "mods/create-stuff-and-addition-tank-fix.pw.toml"
 hash = "794f55dabae0798e847f724dad318668c2cbf473e598e7749788f73dd7d589d6"
+metafile = true
+
+[[files]]
+file = "mods/create-ultimate-factory.pw.toml"
+hash = "667018ccd3d11d7ab9e76149c0d1c22fe33575442cc0e0e7db2425013a052b3c"
+metafile = true
+
+[[files]]
+file = "mods/create-ultimine.pw.toml"
+hash = "65f1f2ec32b8a19a19a5108eeaf8a1e615bd1518c199761ce342e144110cc98c"
+metafile = true
+
+[[files]]
+file = "mods/create_factory_logistics.pw.toml"
+hash = "1d2dfc3d856ea101951f2fad926c3e4e47c1703f78c33c1a0df7c44d03559f9a"
+metafile = true
+
+[[files]]
+file = "mods/create_oxidized.pw.toml"
+hash = "39abe5dfce89a63a9e9ac88bf9012f44ff91e9d77a403fadf4bcf2f949e1bdf2"
 metafile = true
 
 [[files]]
@@ -6025,6 +6099,11 @@ metafile = true
 [[files]]
 file = "mods/dont-punch-my-tacz.pw.toml"
 hash = "01434b876375d45f32055587cb642b74603a2e42d2b96f8a513b1b050e4c3946"
+metafile = true
+
+[[files]]
+file = "mods/dragonlib.pw.toml"
+hash = "8f2175b97db48ae302ec1d529f9e2b11c2da15218324188ad184195b74a11a13"
 metafile = true
 
 [[files]]
@@ -6136,6 +6215,11 @@ hash = "bfb531b1cc52e9d9e53e2304ef64fc361268b0d3a263c5fa94332bf6b9f10c9d"
 metafile = true
 
 [[files]]
+file = "mods/ftb-chunks-forge.pw.toml"
+hash = "09f5357db88b0e8a72621b034f772aa6268604aa6fa24a453d69406b065baf7b"
+metafile = true
+
+[[files]]
 file = "mods/ftb-essentials.pw.toml"
 hash = "4da0140a90a045679f4abd0a1b0cca0edf68f0e57137cc2ee21af565688322af"
 metafile = true
@@ -6143,6 +6227,16 @@ metafile = true
 [[files]]
 file = "mods/ftb-library-forge.pw.toml"
 hash = "abcaf1a1d57b29b2c92c68b786716336319cc32bbbf347353a1f2448326d0eae"
+metafile = true
+
+[[files]]
+file = "mods/ftb-teams.pw.toml"
+hash = "3cc71b9cfdd1ec44d145a1949ad63305b11a1fb4bd555102ee9179c6035238ac"
+metafile = true
+
+[[files]]
+file = "mods/ftb-ultimine.pw.toml"
+hash = "e32fbfb5b795127964ff85f2e435bb8224b1aed32fa77ff1a450e26484c88ef4"
 metafile = true
 
 [[files]]
@@ -6858,6 +6952,11 @@ metafile = true
 [[files]]
 file = "mods/tidemaid.pw.toml"
 hash = "4a9c1ed3f9c731038140035168ba7c5ada5172a3afbc0fc3be370ec347beea45"
+metafile = true
+
+[[files]]
+file = "mods/toms-peripherals.pw.toml"
+hash = "c3cc75b1727e53d28e304626fff00d69e831c44a23668270bd710b0e78ecbec6"
 metafile = true
 
 [[files]]
