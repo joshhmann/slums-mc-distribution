@@ -6601,11 +6601,6 @@ hash = "4c805b5c2cbb727c02d98e18190b70b0ce3f1352a1340a71ad61bf6aac5decff"
 metafile = true
 
 [[files]]
-file = "mods/pmshaders-1.1.1-P8ibnjWb-antxPts2.pw.toml"
-hash = "a71b34061f78031a79449f4aa69b8d55d7b2c6a77959e7ef5491a3f215a16f4a"
-metafile = true
-
-[[files]]
 file = "mods/polymorph-neoforge-1.1.0+1.21.1-tagwiZkJ-VEburL70.pw.toml"
 hash = "ccd50fafc6fc7d7ea4b1f75ea586aa1c4b3331a105c296399c9a12687bcd323d"
 metafile = true
