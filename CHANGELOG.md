@@ -1,5 +1,22 @@
 # Slums MC Changelog
 
+## 1.0.8 - 2026-09-27
+
+### Removed
+
+- **PMWeather stack** (server + client): `pmweather`, `pmwextra`, `easaddon`, `villagersrun` (Villagers Take Cover), `windmeter` (Elton's Wind Meter). Three of the four addons declare PMWeather as a *required* dependency, so the whole stack had to go together. Seasons, tornadoes, wildfires, log-rotting and block weather-damage are gone with it; reinforced concrete and rotted wood are no longer obtainable.
+- **`create-ccbr`** — it silently replaced 20 of CC:Tweaked's core recipes with Create-gated versions (`minecraft:stone` → `create:andesite_alloy`) and had no config toggle. Vanilla CC:Tweaked recipes are native again. The server-side `slums-cc-vanilla-recipes` world datapack is retained as a guard in case ccbr is ever reintroduced.
+
+### Changed
+
+- Server mod count 306 → 298; PMWeather-family configs removed from both trees.
+
+## 1.0.8-hotfix1 - 2026-09-27
+
+### Removed
+
+- **`pmshaders` (PMShaders)** from the client distribution — it provides shader support for ProtoManly's weather mod (PMWeather), which was removed in 1.0.8. It was a dead dependency with no remaining purpose. Client-only mod; no server change or restart required, and no other mod depends on it.
+
 ## 1.0.4-hotfix2 - 2026-09-20
 
 ### Changed
