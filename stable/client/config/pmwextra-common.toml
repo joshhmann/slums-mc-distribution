@@ -1,3 +1,0 @@
-["Debug tools"]
-	#Makes the sounding viewer display a live snapshot of the atmosphere (When connected to platform
-	liveSounding = false

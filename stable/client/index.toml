@@ -1697,14 +1697,6 @@ file = "config/dummmmmmy-common.toml"
 hash = "2aae9feebc1c7bd460da1890043eb7398ae37dfdacaeb3ddacd7877b63dcca92"
 
 [[files]]
-file = "config/easaddon-client.toml"
-hash = "29bd7a11d20f86a03182f6d67fc8caf8f961f2f3de1c496203e14e9e9850498a"
-
-[[files]]
-file = "config/easaddon-server.toml"
-hash = "f7fee118d87180684244d0a546bec41129534a9a41c58b7ae2dd76148e4f33ff"
-
-[[files]]
 file = "config/enchdesc.json"
 hash = "7116b95a9b6797af8db84e410a2ca2fdf6f813461e37cd04bff5af933f31567b"
 
@@ -2095,26 +2087,6 @@ hash = "1f055f8cdc62d4035fecc05af7a1b6398ff0f9efdacc4422c4e58d8ec0a253bb"
 [[files]]
 file = "config/patchouli-client.toml"
 hash = "d9a6d7cadb6d473cf087602d9866840d2bb7f2c16915267eb3f6fbf68d5d774d"
-
-[[files]]
-file = "config/pmweather-client.toml"
-hash = "b044840998cd2a40643f8c792bce8844e378ad6a701e34dc46469bf57d2bb34f"
-
-[[files]]
-file = "config/pmweather-server.toml"
-hash = "1872feccb4368a4438d5ac621de3831a5eb35ab6c8f89794b1c89a970be00b06"
-
-[[files]]
-file = "config/pmwextra-client.toml"
-hash = "2d11d07629f7d7af668b24566ae9e84e3f860ba0a594092f7ab42ff110590f96"
-
-[[files]]
-file = "config/pmwextra-common.toml"
-hash = "cce71b2177b496c03994c6698379464329bb805fe76dd07beb1722cb1c158fc8"
-
-[[files]]
-file = "config/pmwextra-server.toml"
-hash = "cb8e87fc01621195264a3118e94203e64f37145a63f4101c5b2fdc4694372261"
 
 [[files]]
 file = "config/ponder-client.toml"
@@ -2603,14 +2575,6 @@ hash = "9433d076286912f82423d117eb4d78a8ec1508503242d510b35dbf22a7ff70f1"
 [[files]]
 file = "config/wildernature-common.toml"
 hash = "58fa0b63a78d7013a43eb193c45d22bd65ec04bd8448dec1140393d7f48fd73c"
-
-[[files]]
-file = "config/windmeter-client.toml"
-hash = "6de3f1d2c5b0fbec03f154533d786690db070163950f02cbfd0c62c8fe304a06"
-
-[[files]]
-file = "config/windmeter-server.toml"
-hash = "5e852f955ec3cadf17378624aa750a7e0a182c52fdd889a41905e71735af6767"
 
 [[files]]
 file = "config/wizards/effects.json"
@@ -5918,11 +5882,6 @@ hash = "7aa8598b2e35ba89fe38274156ef9092b7a2b3c410bc507961e0cca691bee159"
 metafile = true
 
 [[files]]
-file = "mods/create-ccbr.pw.toml"
-hash = "d62ea3dddf66d8a3b695f0884a522e6581571450e3cf42e04a54255cb4845641"
-metafile = true
-
-[[files]]
 file = "mods/create-central-kitchen.pw.toml"
 hash = "ec00a16a28c8b8671948f2d12df41ed4faeaad6c4beb3810b2a0e917945b3d45"
 metafile = true
@@ -6109,11 +6068,6 @@ metafile = true
 [[files]]
 file = "mods/dummmmmmy-neoforge-1.21-2.1.0-Adega8YN-PQzuABde.pw.toml"
 hash = "c11fcbf8d36bb31429383e942c48676047bbe4a5691847ac700bf98f6a6ae3e0"
-metafile = true
-
-[[files]]
-file = "mods/easaddon-0.17.3-TUoNu1nC-freS6Qmc.pw.toml"
-hash = "92bd8dfb2c726f65e541e655bfa231646a9f03561a35eb66cad87b2b77596519"
 metafile = true
 
 [[files]]
@@ -6652,16 +6606,6 @@ hash = "a71b34061f78031a79449f4aa69b8d55d7b2c6a77959e7ef5491a3f215a16f4a"
 metafile = true
 
 [[files]]
-file = "mods/pmweather-1.21.1-0.17.14-alpha-TfCsmTLI-twmdjNBb.pw.toml"
-hash = "114f41ee5d0b6a69ddd3797e729e46a61367b172e65457b3d5cf82cdb5a1d890"
-metafile = true
-
-[[files]]
-file = "mods/pmwextra-0.2.1-EkOB83Jm-2RysQE1i.pw.toml"
-hash = "ed83228045e52c18e90c51873ddcf99040d67bcc03e7347a0f3d0c6275948ba2"
-metafile = true
-
-[[files]]
 file = "mods/polymorph-neoforge-1.1.0+1.21.1-tagwiZkJ-VEburL70.pw.toml"
 hash = "ccd50fafc6fc7d7ea4b1f75ea586aa1c4b3331a105c296399c9a12687bcd323d"
 metafile = true
@@ -6990,11 +6934,6 @@ hash = "27219b7237ee1ca53cd61414a553d7e8abcfbcfee877c9609a8736a8d0baf95b"
 metafile = true
 
 [[files]]
-file = "mods/villagersrun-0.0.5a-DrsiWlf9-5rlGADT9.pw.toml"
-hash = "ba50c7d3375ef6283cfd8a10f704c509b610c8de7a3c71d54aa0088efbfab604"
-metafile = true
-
-[[files]]
 file = "mods/visual-workbench.pw.toml"
 hash = "2684f71394862cff4c20d0f4d8491c0f86f12e66879381295e9088e0eded025d"
 metafile = true
@@ -7007,11 +6946,6 @@ metafile = true
 [[files]]
 file = "mods/weather2-neoforge-1.21.0-2.8.7.jar-dv5SFk5T-yjf2exnB.pw.toml"
 hash = "47bfc3a2607752294d46586c48657f93d5ca6bb011f890de88a5fd67ec8f38a9"
-metafile = true
-
-[[files]]
-file = "mods/windmeter-0.0.36-wgQjOBvx-tLzjQ6sT.pw.toml"
-hash = "f9ffe0291a58ea314191522e191e622ed5428a59d63f298513ad2d735fc51d48"
 metafile = true
 
 [[files]]
