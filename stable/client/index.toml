@@ -6730,6 +6730,11 @@ hash = "3235e305c3887e83c7ce662a91f053a5a936e31479368adfd3cf026689935894"
 metafile = true
 
 [[files]]
+file = "mods/shulkerboxtooltip.pw.toml"
+hash = "4cf3d3d7e5f4df819d5b67ab0b278a6baffdf880e2a2c9c4d0105fbfe3986376"
+metafile = true
+
+[[files]]
 file = "mods/simplymore-forge-1.2.3-zhpyD8Y0-bVBS14OK.pw.toml"
 hash = "13a006134b08101f8e0d50f501235405c02bf83636ab44a7c15b6e12f6166420"
 metafile = true
@@ -6891,6 +6896,11 @@ metafile = true
 [[files]]
 file = "mods/tidemaid.pw.toml"
 hash = "4a9c1ed3f9c731038140035168ba7c5ada5172a3afbc0fc3be370ec347beea45"
+metafile = true
+
+[[files]]
+file = "mods/tmrv.pw.toml"
+hash = "40f7d1c072b54e11492e7774835901d4f5d757b01cac54947657695f580afd3a"
 metafile = true
 
 [[files]]
