@@ -6259,6 +6259,11 @@ hash = "184d84d24367aa7656629cb5a8738adca43cf4f80b27933cc7289a3bd11677b5"
 metafile = true
 
 [[files]]
+file = "mods/jei-1.21.1-neoforge-19.57.0.449.pw.toml"
+hash = "d4aecf65bb9f38f169d88bf421678ccad13cbe36803ab221d756fa011cad5867"
+metafile = true
+
+[[files]]
 file = "mods/jewelry-neoforge-2.4.0+1.21.1-sNJAIjUm-UYMxzqUh.pw.toml"
 hash = "24829088bd1a4f805b5a13e8fd0b621d6673bb1de2b45abe1f2e7d37301f9c5c"
 metafile = true
