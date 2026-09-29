@@ -121,6 +121,25 @@ disabled_generic_methods = []
 	#   receive in one websocket packet.
 	# - "use_proxy" (optional): Enable use of the HTTP/SOCKS proxy if it is configured.
 	[[http.rules]]
+		#Mai 2026-09-29: allow CC computers to reach the local CC dev/WebSocket bridge.
+		#Rules are evaluated in order (earlier wins), so this MUST sit above the $private deny.
+		host = "192.168.0.128"
+		port = 8765
+		max_upload = 4194304
+		action = "allow"
+		use_proxy = false
+		max_websocket_message = 131072
+		max_download = 16777216
+	[[http.rules]]
+		#Docker bridge gateway for the same host (alternate path from inside the container).
+		host = "172.18.0.1"
+		port = 8765
+		max_upload = 4194304
+		action = "allow"
+		use_proxy = false
+		max_websocket_message = 131072
+		max_download = 16777216
+	[[http.rules]]
 		#The magic "$private" host matches all private address ranges, such as localhost and 192.168.0.0/16.
 		#This rule prevents computers accessing internal services, and is strongly recommended.
 		host = "$private"

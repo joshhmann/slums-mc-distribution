@@ -1182,7 +1182,7 @@ hash = "db7bbdc89ab05070b2a4c22f6348b0c80aca4a3c449d92cdc6bc56b5af25ff7b"
 
 [[files]]
 file = "config/computercraft-server.toml"
-hash = "d4995da449d5c96d24245c7108b339b729cc088b012170b3445f7f4fc1e20b3d"
+hash = "d32ce8a4be721c2f6dd4ea921132d9387e0fa07687274a11f5ae649b854cdb55"
 
 [[files]]
 file = "config/create-client.toml"
@@ -6683,6 +6683,11 @@ metafile = true
 [[files]]
 file = "mods/rogues-neoforge-3.1.1+1.21.1-3MKqoGuP-xnANhdPV.pw.toml"
 hash = "88e94c103b004d592ffdf3c1f4f4f07734d0c5e1d7c688d59b063a212cf04c1e"
+metafile = true
+
+[[files]]
+file = "mods/routers-1.21.1-1.1.9.pw.toml"
+hash = "0385ba0ba7e308665ad2bea4964a223b8f8f32173bf613c9d0bfb0fbc8c9b935"
 metafile = true
 
 [[files]]

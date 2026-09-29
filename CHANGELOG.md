@@ -1,5 +1,26 @@
 # Slums MC Changelog
 
+## 1.1.4 - 2026-09-29
+
+### Added
+
+- **BBL Routers** (`routers-1.21.1-1.1.9.jar`, project `g69ApBz2`, version `P57vcvrr`) — a fully wireless item, **fluid**, and energy transportation mod. Adds the **Importer** (attaches to a target inventory), the **Exporter** (connected to a source), and the **Router Connector** that links them wirelessly. Filters accept item and fluid stacks, including JEI drag. Also integrates with Mekanism gases and Ars Source.
+- Declared requirements (`neoforge >=21.1.203`, `minecraft [1.21.1,1.22)`, optional `jei`) are all satisfied by the current pack. This is the first mod in the pack that can move **fluids** without pipes or adjacent tanks.
+
+### Changed
+
+- **`config/computercraft-server.toml`** — added two narrow HTTP allow rules so CC:Tweaked computers can reach the local CC development/WebSocket bridge on port `8765`:
+  - `host = "192.168.0.128", port = 8765` → allow
+  - `host = "172.18.0.1", port = 8765` → allow
+- These are inserted **above** the bundled `$private` deny rule, because CC rules are evaluated in order and the earlier match wins. `$private` matches *all* private ranges (localhost, 192.168.0.0/16, 10/8, 172.16/12), which is why the bridge was unreachable even though `http.enabled` and `http.websocket_enabled` were already on.
+- Both rules carry websocket-sized caps (`max_websocket_message = 131072`, `max_download = 16777216`, `max_upload = 4194304`). One host, one port — the rest of the LAN stays denied.
+- Applied to **both** sides: the server pack override *and* the client config, so the setting survives restarts and re-deploys on both ends.
+
+### Note
+
+- Server `mods/` now holds 299 jars + 2 `.disabled`. Verified boot: `Done (8.552s)`, `BBL Routers 1.1.9 (routers)` discovered, zero install errors.
+- Diagnosed and recovered from a transient DNS outage mid-deploy: the first boot failed with `UnknownHostException: Failed to resolve 'cdn.modrinth.com'` and the container exited. No mods were lost (all 300 pre-existing files intact). Re-running the boot after DNS recovered completed cleanly.
+
 ## 1.1.3 - 2026-09-28
 
 ### Fixed
