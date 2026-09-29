@@ -1,5 +1,21 @@
 # Slums MC Changelog
 
+## 1.1.3 - 2026-09-28
+
+### Fixed
+
+- **Removed six redundant raw mod jars** that duplicated a mod already supplied by a Packwiz metafile. In each pair the raw jar was an *older* copy and the metafile downloaded a newer one, so every client ended up holding two versions of the same mod. NeoForge resolves these by picking the higher version (the server has booted on them for weeks), but they are duplicate deliverables in the index and duplicate mod ids in every player's `mods/` folder:
+  - `cupboard-1.21.1-4.0.jar` — superseded by `cupboard.pw.toml` → `cupboard-1.21.1-4.2.jar`
+  - `lootintegration_townsandtowers-1.4.jar` — superseded by `loot-integrations-towns-and-towers.pw.toml` → `lootintegration_townsandtowers-1.5.jar`
+  - `lootintegrations_ctov-1.4.jar` — superseded by `loot-integrations-choicetheorems-overhauled.pw.toml` → `lootintegrations_ctov-1.6.jar`
+  - `lootintegrations_integrated-1.5.jar` — superseded by `loot-integrations-integrated-dungeons-villages.pw.toml` → `lootintegrations_integrated-1.6.jar`
+  - `lootintegrations_moog-2.1.jar` — superseded by `loot-integrations-moogs-voyager-soaring-end-nether.pw.toml` → `lootintegrations_moog-2.2.jar`
+  - `lootintegrations_vanilla-1.7.jar` — superseded by `vanilla-loot-addon-for-loot-integrations.pw.toml` → `lootintegrations_vanilla-1.8.jar`
+
+### Note
+
+- Client-only change; no server restart required and no server mod removed. The live server still carries older copies of these same jars in its `mods/` dir — harmless (NeoForge loads the newest) but worth mirroring during a future maintenance window. This was **not** the cause of the 1.1.0/1.1.1 launch failures; those were the JEI conflict fixed in 1.1.2.
+
 ## 1.1.2 - 2026-09-28
 
 ### Fixed

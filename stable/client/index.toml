@@ -6027,10 +6027,6 @@ hash = "b762100657f47abd5b7a345645e7ff972a72926e3d6334c8b08f3187d2d94586"
 metafile = true
 
 [[files]]
-file = "mods/cupboard-1.21.1-4.0.jar"
-hash = "426cd295560df4fceac7b410d864bd93ac200f8b77f9146ac430e92f36dae761"
-
-[[files]]
 file = "mods/cupboard.pw.toml"
 hash = "c4ab1a11790feacaa8f30316e902cfe4554d664bfa46432170b76fc6d175887e"
 metafile = true
@@ -6419,32 +6415,12 @@ hash = "57bceaac72e0bf0cf4a3a9d325e81c32947b1adccede03342119e1c9b4c4539d"
 metafile = true
 
 [[files]]
-file = "mods/lootintegration_townsandtowers-1.4.jar"
-hash = "3ae245fa68937122ddc50461c48aea55619ba9918c6ff5b0f9d6d7e60aef032f"
-
-[[files]]
 file = "mods/lootintegration_wda-1.8.jar"
 hash = "8645bc1926c231c715beb2393141c97079f9a84798039734479d69753ddd42bb"
 
 [[files]]
 file = "mods/lootintegrations-1.21.1-4.7.jar"
 hash = "1de9e6352f643f2850dce3e6b7aa8274902798a2243ea9e494fe13aabaa90d2c"
-
-[[files]]
-file = "mods/lootintegrations_ctov-1.4.jar"
-hash = "42399d1eb605b313f6c39dd0d2f320e473eaee48c4177bbd7424ebd7370e43a5"
-
-[[files]]
-file = "mods/lootintegrations_integrated-1.5.jar"
-hash = "45182e1106a9f2ac75f35f680d0cd2d0de8457587a7e9fdfee54e2cc6a156fbd"
-
-[[files]]
-file = "mods/lootintegrations_moog-2.1.jar"
-hash = "3c05d252948fd5133c5d89274a0c1c2f661ff8c0383994324def510596bbe5f6"
-
-[[files]]
-file = "mods/lootintegrations_vanilla-1.7.jar"
-hash = "f7df4b646f6ff3a42a940d417d5c84f9cf4b51275ce35e7583f6de0b6432e3e5"
 
 [[files]]
 file = "mods/lootintegrations_yungs-1.6.jar"
