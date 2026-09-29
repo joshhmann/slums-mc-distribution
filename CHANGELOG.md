@@ -1,5 +1,51 @@
 # Slums MC Changelog
 
+## 1.1.5 - 2026-09-29
+
+### Added
+
+Four **CC:Tweaked display and peripheral** mods, all `client_and_server` side, all verified dependency-clean against the shipped 1.1.4 roster:
+
+- **CC:DirectGPU** (`directgpu-1.0.24-neoforge-1.21.1.jar`, project `y2LA8uQE`, version `kxl9oeha`) — hardware-accelerated monitor rendering. True 24-bit colour, up to **164×164 px per block** (656×656 at 4× scaling), monitor arrays up to 16×16, mouse/keyboard input on the monitor surface, JPEG/PNG/GIF decode. Note: Fabric/Forge builds are discontinued — **NeoForge 1.21.1 is now the exclusive target**, which is exactly this pack's stack.
+- **CC: Spatial Projector** (`cc_spatial_projector-0.1.0.jar`, project `vcgbtkpD`, version `U5woeSNw`) — in-world holograms for CC:Tweaked: lines, boxes, markers, overlays drawn in world space and viewed through Spatial Goggles. Overlays only — it does not place blocks or affect collisions. Pairs directly with turtle fleet debugging.
+- **CC: Terminals** (`ccterminals-1.21.1-forge-0.1.1.jar`, project `mbjglPPW`, version `VT1i1B2`, file `3VT1i1B2`) — GUI-based terminal peripheral blocks for CC:Tweaked.
+- **Classic Peripherals** (`classicperipherals-neoforge-1.21.1-0.6.5.jar`, project `F0AMrDjl`, version `gh1FbBVy`) — adds a set of peripherals to CC:Tweaked.
+
+### Why these four
+
+Chosen to close the "can a computer *see* and *display*?" gap for the turtle fleet work. With these, a CC computer can render high-resolution graphics (DirectGPU), project in-world markers for debugging (Spatial Projector), and expose a broader peripheral surface (Terminals, Classic Peripherals).
+
+There is **no true camera or LIDAR peripheral for CC:Tweaked** on this version. The closest thing to volumetric vision is **Advanced Peripherals' Geo Scanner** (`scan(radius)` returns every block with name/tags/x/y/z), which is **already installed**. `CameraCraft` exists but is a separate CCTV system that does not expose a CC peripheral — deliberately not added.
+
+### Compatibility verified
+
+| Requirement | Needed by | Pack has | Result |
+|---|---|---|---|
+| `computercraft >= 1.117.1` | DirectGPU | 1.120.2 | OK |
+| `computercraft >= 1.120.0` | Spatial Projector, Classic Peripherals | 1.120.2 | OK |
+| `create [6.0.10, 6.1.0)` | Spatial Projector | 6.0.10 | OK |
+| `neoforge [21.1, 21.2)` | CC: Terminals | 21.1.248 | OK |
+| `neoforge >= 21.1.228` | Classic Peripherals | 21.1.248 | OK |
+
+Optional dependencies only, neither able to bite: `ccgraphics` (absent from the pack, and declared `optional` + `incompatible` below 0.2.1, so its absence is harmless) and `curios` 9.5.1 (present, range `*`).
+
+### Verification performed
+
+- **Both trees installed end-to-end** with the real `packwiz-installer-bootstrap` (headless): client `Finished successfully!` (329 jars), server `Finished successfully!` (303 jars).
+- **All four jars hash-verified (sha512)** against their metafiles after install.
+- **Zero duplicate mod ids** introduced. The pre-existing `cupboard` and `lootintegrations*` duplicate pairs (old + new halves) are present on the live server and in the base source tree — **unchanged** by this release, not caused by it.
+- **Client/server roster parity**: no server-only jars beyond the pre-existing baseline set.
+- **Superset check**: candidate is a strict superset of shipped 1.1.4 — **zero project removals**, exactly four additions.
+
+### Fixed (tooling / source tree)
+
+- The **server source tree was stale**: it was missing `routers-1.21.1-1.1.9.jar` (BBL Routers, shipped to the client in 1.1.4). A server pack rebuilt from that tree would have **silently removed BBL Routers from the live server**. Added it to both the server tree and this candidate; the live server's existing jar hash matches the metafile exactly.
+
+### Note
+
+- Client pack: 335 → **339** mod entries. Server pack: 300 → **305** (299 jars + 2 `.disabled` + metafiles).
+- Nothing was deployed. The live server was read-only throughout; all install verification ran against local candidate trees.
+
 ## 1.1.4 - 2026-09-29
 
 ### Added

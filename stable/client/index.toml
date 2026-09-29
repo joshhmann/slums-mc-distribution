@@ -5792,6 +5792,16 @@ hash = "7ade465d4635d89a3b50078b2e8043313c1e4f266654aabbbd1d153206ad123d"
 metafile = true
 
 [[files]]
+file = "mods/cc-spatial-projector.pw.toml"
+hash = "8bc321d208fbba754553f9d960c3f28d98feb82860bc135f2a6747ca8e843f09"
+metafile = true
+
+[[files]]
+file = "mods/cc-terminals.pw.toml"
+hash = "f34d681d3c7f678b8a36774c41111e3f0e802d7e51164b60d4f9f8b690fa8cb1"
+metafile = true
+
+[[files]]
 file = "mods/cc-tweaked-1.21.1-forge-1.120.2-gu7yAYhd-1ewzHZYg.pw.toml"
 hash = "8903fcd88edc6430f9b725aff7ebcf87d622006b700014a1a47cb5fcb4612db7"
 metafile = true
@@ -5799,6 +5809,11 @@ metafile = true
 [[files]]
 file = "mods/cccbridge.pw.toml"
 hash = "50c257005a7b27194c7136c6508a95c591be0fc809bfb565ca91c876f0962410"
+metafile = true
+
+[[files]]
+file = "mods/ccdirectgpu.pw.toml"
+hash = "65e97a468077b35d3384c70880981610cf786635f772a3c21c6b93ba439459d5"
 metafile = true
 
 [[files]]
@@ -5819,6 +5834,11 @@ metafile = true
 [[files]]
 file = "mods/chunky-offline-v1.1.0-VfHc5JEX-56xL4i2r.pw.toml"
 hash = "0c957111cbd222738af95aebc23a425cfcead57f1d0cce0663fc8702aa61074c"
+metafile = true
+
+[[files]]
+file = "mods/classicperipherals.pw.toml"
+hash = "ffd5d5d9a45b422b25d16ed72e8a9e4bee1844c267a3bc0ebcb5ae27f161e018"
 metafile = true
 
 [[files]]
