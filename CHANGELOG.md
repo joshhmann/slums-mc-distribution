@@ -1,5 +1,33 @@
 # Slums MC Changelog
 
+## 1.1.2 - 2026-09-28
+
+### Fixed
+
+- **Removed `tmrv` (TooManyRecipeViewers)** — added in 1.1.0, it broke client launch. TMRV declares its own `modId = "jei"` **stub at version `19.27.0.343`**. Because JEI plugins from `sophisticatedcore` and `polymorph` were already in the pack, TMRV made JEI *present but under-versioned*, and those mods' optional-but-present JEI requirement failed:
+  - `sophisticatedcore` (and the Sophisticated Create integrations) require JEI ≥ `19.32.0.359`
+  - `polymorph` requires JEI ≥ `19.52.0.421`
+- **Diagnosis note:** the JEI requirement in those mods is `type = "optional"`, which means *absent* is fine but *present-and-old* is a hard error. TMRV's stub was the only reason a JEI version conflict could occur at all.
+- Keeping JEI `19.57.0.449` (added in 1.1.1); removing TMRV resolves the duplicate-mod collision. Verified by a full installer run from a 1.1.0 instance: `Deleted toomanyrecipeviewers-0.9.0+mc.21.1.jar (removed from pack)`.
+
+## 1.1.1 - 2026-09-28
+
+### Fixed
+
+- **Added JEI `19.57.0.449`** (`jei-1.21.1-neoforge-19.57.0.449.jar`) to satisfy the JEI dependency errors introduced by TMRV in 1.1.0. This resolved the version complaint but produced a duplicate-mod conflict (`Mod jei is present in multiple files`), because TMRV bundles its own JEI stub. Superseded by 1.1.2.
+- Client-only change; no server restart required.
+
+## 1.1.0 - 2026-09-28
+
+### Added
+
+- `tmrv` (TooManyRecipeViewers) — a JEI-plugin compatibility layer for EMI. **Reverted in 1.1.2**: its bundled JEI stub (`19.27.0.343`) conflicts with the JEI versions required by `sophisticatedcore` and `polymorph`.
+- `shulkerboxtooltip` (Shulker Box Tooltip) `5.1.9+1.21.1`.
+
+### Note
+
+- 1.1.0 and 1.1.1 were both broken client releases. Friends updating to either will hit a mod-loading error; **1.1.2 is the first working version**.
+
 ## 1.0.8 - 2026-09-27
 
 ### Removed
