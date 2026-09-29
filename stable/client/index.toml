@@ -6904,11 +6904,6 @@ hash = "4a9c1ed3f9c731038140035168ba7c5ada5172a3afbc0fc3be370ec347beea45"
 metafile = true
 
 [[files]]
-file = "mods/tmrv.pw.toml"
-hash = "40f7d1c072b54e11492e7774835901d4f5d757b01cac54947657695f580afd3a"
-metafile = true
-
-[[files]]
 file = "mods/toms-peripherals.pw.toml"
 hash = "c3cc75b1727e53d28e304626fff00d69e831c44a23668270bd710b0e78ecbec6"
 metafile = true
