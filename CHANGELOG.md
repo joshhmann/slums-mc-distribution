@@ -44,7 +44,7 @@ Optional dependencies only, neither able to bite: `ccgraphics` (absent from the 
 ### Note
 
 - Client pack: 335 → **339** mod entries. Server pack: 300 → **305** (299 jars + 2 `.disabled` + metafiles).
-- Nothing was deployed. The live server was read-only throughout; all install verification ran against local candidate trees.
+- **Deployed 2026-09-29.** Server: swapped the mounted mrpack in place (inode preserved), new boot `[22:38:55] Done (9.062s)!`, 305 files, all four mods registered, BBL Routers preserved, boot ERROR count unchanged from the previous boot (1 vs 1). Client: pushed to `main`; verified by installing the **published** raw-GitHub pack end-to-end (`Finished successfully!`, 329 jars).
 
 ## 1.1.4 - 2026-09-29
 
