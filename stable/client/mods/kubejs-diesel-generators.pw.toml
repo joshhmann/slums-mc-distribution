@@ -3,11 +3,11 @@ filename = "dg_js-1.21.1-1.2.8.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "556f2f3a266712d485c427ab86043d75126861ba"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/10UMLVgM/versions/qGdsOmYM/dg_js-1.21.1-1.2.8.jar"
+hash-format = "sha512"
+hash = "cd254626cab6aaa5d333608f8d96122ec9782f452e6aba1b0c66eb64b709d5e1cd2b3043feb64280bf12b6cc486cbebe824ccd930875ff4e738b61053aa52d88"
 
 [update]
-[update.curseforge]
-file-id = 9078867
-project-id = 1152400
+[update.modrinth]
+mod-id = "10UMLVgM"
+version = "qGdsOmYM"
