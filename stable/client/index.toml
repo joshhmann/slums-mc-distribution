@@ -5512,11 +5512,6 @@ hash = "0e6096913c73bcc5c49936c65d260bb6f223fff9e78d5c5041f48a121e5851c8"
 metafile = true
 
 [[files]]
-file = "mods/Quark-4.1-482-qnQsVE2z-yvp3Jbmk.pw.toml"
-hash = "8967f644cb707690b0354c19ec5548767f23102e192b8367939d872637ce892f"
-metafile = true
-
-[[files]]
 file = "mods/Ribbits-1.21.1-NeoForge-4.1.6-8YcE8y4T-XrUKaWrw.pw.toml"
 hash = "6262772c29ec42d2bc75f2bb382836cedba4a91cbb906b7c35317d9058e55839"
 metafile = true
@@ -6649,6 +6644,11 @@ metafile = true
 [[files]]
 file = "mods/punchy-fpa.pw.toml"
 hash = "5e16706d7292695c76d67bceaa9e75b4dde904d1f642b31d4ad17b63f1b0781e"
+metafile = true
+
+[[files]]
+file = "mods/quark.pw.toml"
+hash = "44c0434a0c305ffa4a3d31911a766c27c21eeab8d907cbaf7adc23bf5b8c516e"
 metafile = true
 
 [[files]]
