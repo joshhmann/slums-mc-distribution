@@ -1,12 +1,12 @@
 name = "Slums MC"
 author = "Josh"
-version = "1.1.5"
+version = "1.2.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "9a32786d374d1f861275656dc19f392106395a185621eeeb60f3b8609a9a4d3e"
+hash = "a7d0c69a876b62a964b360bdf514c8014e54cab67f145bba487d1a124900aeca"
 
 [versions]
 minecraft = "1.21.1"

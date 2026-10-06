@@ -1,13 +1,13 @@
 name = "skill_tree-neoforge-1.6.0+1.21.1"
-filename = "skill_tree-neoforge-1.6.0+1.21.1.jar"
+filename = "skill_tree-neoforge-1.6.1+1.21.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/PjDhruSC/versions/sxJUD8Hf/skill_tree-neoforge-1.6.0%2B1.21.1.jar"
+url = "https://cdn.modrinth.com/data/PjDhruSC/versions/Vr94BeiF/skill_tree-neoforge-1.6.1%2B1.21.1.jar"
 hash-format = "sha512"
-hash = "85fb58fdc529007876bf6691cac80a0b695cc3dfccf0253db6ac6e2f40525d350257e426fcab0540df9d6451e919420bbdca1deb0389dc6d974c981fe6bd0293"
+hash = "29c05b2049f2baffe371ea8e039106fb8f68854b6ff2877ff06ee78fb2e8e179eef0fc6850324c3eb2778caaa24de5e269dfc4c2b693c9d163c0d7b49410f3b4"
 
 [update]
 [update.modrinth]
 mod-id = "PjDhruSC"
-version = "sxJUD8Hf"
+version = "Vr94BeiF"

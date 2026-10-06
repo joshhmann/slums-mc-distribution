@@ -1,13 +1,13 @@
 name = "ubesdelight-neoforge-1.21.1-0.4.14"
-filename = "ubesdelight-neoforge-1.21.1-0.4.14.jar"
+filename = "ubesdelight-neoforge-1.21.1-0.4.15.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/PYjpoAys/versions/ZvxIWiqT/ubesdelight-neoforge-1.21.1-0.4.14.jar"
+url = "https://cdn.modrinth.com/data/PYjpoAys/versions/hxl0dMZ3/ubesdelight-neoforge-1.21.1-0.4.15.jar"
 hash-format = "sha512"
-hash = "73c4ca3d0d8e38d7dbf36686f46ea54db42ab70f36a3e14a10d69bc2ea942fc1577dc8e6b59a7b6178c8407ebc1cbf0c86889144c4e4dec096feed67db84e3b3"
+hash = "2a9ab346f3575b4da5f87e1ca2ecbf90fde39ab8ec68c513194fda31b28100dfe73b6f0f87d0ed300bd73a655558a4fcbf09b668074ea20b638d0db87390806c"
 
 [update]
 [update.modrinth]
 mod-id = "PYjpoAys"
-version = "ZvxIWiqT"
+version = "hxl0dMZ3"

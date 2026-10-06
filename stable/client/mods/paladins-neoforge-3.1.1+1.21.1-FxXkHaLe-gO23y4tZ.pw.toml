@@ -1,13 +1,13 @@
 name = "paladins-neoforge-3.1.1+1.21.1"
-filename = "paladins-neoforge-3.1.1+1.21.1.jar"
+filename = "paladins-neoforge-3.1.3+1.21.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/FxXkHaLe/versions/gO23y4tZ/paladins-neoforge-3.1.1%2B1.21.1.jar"
+url = "https://cdn.modrinth.com/data/FxXkHaLe/versions/7oCw7txX/paladins-neoforge-3.1.3%2B1.21.1.jar"
 hash-format = "sha512"
-hash = "b9131918c79680c58f8a10484be03b69c9215e614f675620cec38e8168626f41e1be837d74ca7250c3d6fdab362ea7c816fc90f500a34bc8e5c259f07d3c59a1"
+hash = "cd9ca1246543ba3ac95a0db4b7d173bb092f4c0e4b8f045cba929dddbca6cb45c0ed34c7d76c5d05fb11abed4dd190564bbac98af4abc8bfa61af73b87ebf419"
 
 [update]
 [update.modrinth]
 mod-id = "FxXkHaLe"
-version = "gO23y4tZ"
+version = "7oCw7txX"

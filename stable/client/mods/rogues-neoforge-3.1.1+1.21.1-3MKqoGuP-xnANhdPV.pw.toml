@@ -1,13 +1,13 @@
 name = "rogues-neoforge-3.1.1+1.21.1"
-filename = "rogues-neoforge-3.1.1+1.21.1.jar"
+filename = "rogues-neoforge-3.1.3+1.21.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/3MKqoGuP/versions/xnANhdPV/rogues-neoforge-3.1.1%2B1.21.1.jar"
+url = "https://cdn.modrinth.com/data/3MKqoGuP/versions/WxwS7HDW/rogues-neoforge-3.1.3%2B1.21.1.jar"
 hash-format = "sha512"
-hash = "7c9fab477cf4744ee354d122f71f02c69f75963d3cc584dd77789bfd1160d96985cb56c7740391ffc090a9494a2efef5f78fce3fca7870e1da7c1af1a9650e64"
+hash = "2a2eb952c4aa74d67fccaca43b01f4769d92c0695d0af1d37580ff4c777d719717c6359d96e00df251d75d47111d437043c4541fd3622d96f2568bbf69bbe13d"
 
 [update]
 [update.modrinth]
 mod-id = "3MKqoGuP"
-version = "xnANhdPV"
+version = "WxwS7HDW"

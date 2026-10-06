@@ -1,13 +1,13 @@
 name = "wizards-neoforge-3.1.2+1.21.1"
-filename = "wizards-neoforge-3.1.2+1.21.1.jar"
+filename = "wizards-neoforge-3.1.3+1.21.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/NkGaQMDA/versions/JuuGt2qE/wizards-neoforge-3.1.2%2B1.21.1.jar"
+url = "https://cdn.modrinth.com/data/NkGaQMDA/versions/lxbf57N2/wizards-neoforge-3.1.3%2B1.21.1.jar"
 hash-format = "sha512"
-hash = "8b158d901c489fe455575cb0b2cb0836d3c5366e2b4b05ae5a1dd23f525ee9f50fe4235211903acaaf35d4e2505a65219678d33bb66114a4d39ec492d31c3f36"
+hash = "6e093d08930e7e6582bddfb54c5d3a662d1fd2701dd7ff2d84e77b17c3258b654847778a1c28713aa991dbae2a7caf5396760edcbc1bbefc9ae42e5c28dd36d4"
 
 [update]
 [update.modrinth]
 mod-id = "NkGaQMDA"
-version = "JuuGt2qE"
+version = "lxbf57N2"

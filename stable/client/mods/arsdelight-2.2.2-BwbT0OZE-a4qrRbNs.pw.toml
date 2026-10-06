@@ -1,13 +1,13 @@
 name = "arsdelight-2.2.2"
-filename = "arsdelight-2.2.2.jar"
+filename = "arsdelight-2.2.5.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/BwbT0OZE/versions/a4qrRbNs/arsdelight-2.2.2.jar"
+url = "https://cdn.modrinth.com/data/BwbT0OZE/versions/JtS0qjOn/arsdelight-2.2.5.jar"
 hash-format = "sha512"
-hash = "74487ee0a27e4429ca017dedc56d43195bb7260d3028151708cf4c22a044472fe857e7e6da5f11fab8bc1bae8d5f4945c591afed20de0a4d8c058a947e5b16a8"
+hash = "9b137608443d659ae05c6e9ca278e921e8521c9dea525652628a046c0eebc844a58eeec74070db9628012de2375d331d37c78ded6753e3d6c808c39601ca71c1"
 
 [update]
 [update.modrinth]
 mod-id = "BwbT0OZE"
-version = "a4qrRbNs"
+version = "JtS0qjOn"
