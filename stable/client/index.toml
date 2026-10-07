@@ -6781,6 +6781,11 @@ hash = "39f4e9451e2540ed15421d3371731b6f67c0c047e124f06c60208f94fc8125df"
 metafile = true
 
 [[files]]
+file = "mods/sjap.pw.toml"
+hash = "04624e8f48ad2a1827570e5b3dbbe99a1e621a311dfd2d4254452d4d5ed276ba"
+metafile = true
+
+[[files]]
 file = "mods/skill_tree-neoforge-1.6.0+1.21.1-PjDhruSC-sxJUD8Hf.pw.toml"
 hash = "bf5c7655ad8c65ae0f9e53b36f17798a4c69e64bfb4390b4a1594601e311ffa3"
 metafile = true

@@ -1,0 +1,13 @@
+name = "SlashBladeJapaneseAddonPack"
+filename = "SJAP_Resharpened-1.21.1-2.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/UVAZ3yo1/versions/mdvzVgtS/SJAP_Resharpened-1.21.1-2.0.0.jar"
+hash-format = "sha512"
+hash = "a9acc0c5ffb38f038c76bc19b3125e161003f7e501a60772226d5f08bf62f1df3367fd594529c7690cd8a0c044c0a4b2956b7fd9c11d28cc95677594e6a9b4ae"
+
+[update]
+[update.modrinth]
+mod-id = "UVAZ3yo1"
+version = "mdvzVgtS"
