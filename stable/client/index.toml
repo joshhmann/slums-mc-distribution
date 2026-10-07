@@ -6132,6 +6132,11 @@ hash = "ceba6e2641fdf0b67fccb497d5f41bd6df0209dcf86543214063e34fd7b0bbcf"
 metafile = true
 
 [[files]]
+file = "mods/every-mining-dimension.pw.toml"
+hash = "b806bdd1d431c2b78f494b3bfbb00ac543c9d192b3ff2090b7fc304aaa02bc4d"
+metafile = true
+
+[[files]]
 file = "mods/everycomp-1.21-2.11.50-neoforge-eiktJyw1-vcMMscKB.pw.toml"
 hash = "873a35d4d883c04d0fe13e117bdef95b4f520104864834f62edf6578ba3e7628"
 metafile = true
