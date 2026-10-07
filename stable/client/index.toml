@@ -5922,6 +5922,11 @@ hash = "d13664474b8a9e6f2c540f6581f99cd887631707b663daa4c0eb203c02d9e509"
 metafile = true
 
 [[files]]
+file = "mods/create-dimension,-steamworks-realm.pw.toml"
+hash = "c951e8401520a6d0f02d934bcbe31853144204cd6f28a025ebe760af1dd97e2a"
+metafile = true
+
+[[files]]
 file = "mods/create-dreams-and-desires.pw.toml"
 hash = "c308b557b01b6e6cc25ee8d6a1a7c78bca2b71be3ae645e40d10cf25259fabcd"
 metafile = true
