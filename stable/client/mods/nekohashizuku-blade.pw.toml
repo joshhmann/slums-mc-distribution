@@ -1,0 +1,13 @@
+name = "雫拔刀剑"
+filename = "shizuku-blade-3.7.0-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/R4mVfSYE/versions/ddKh2hmI/shizuku-blade-3.7.0-1.21.1.jar"
+hash-format = "sha512"
+hash = "308ceb7231f280ab51487f2894853523508a283981da1be561d71c8fadfe53fd96453537b17bf42e03a3be475419f27f838523b8ea58df6dc237feda08d2ce28"
+
+[update]
+[update.modrinth]
+mod-id = "R4mVfSYE"
+version = "ddKh2hmI"

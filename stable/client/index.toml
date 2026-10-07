@@ -6582,6 +6582,11 @@ hash = "0ba0e2eb0a67f2353227ca3a531b95de3c07bdcd273a67e3d8c4d34cee7837aa"
 metafile = true
 
 [[files]]
+file = "mods/nekohashizuku-blade.pw.toml"
+hash = "1e08f3405b09e682ffaae9951791c923b5f68d4f46b92681008f6962f0b7dbe8"
+metafile = true
+
+[[files]]
 file = "mods/net-music.pw.toml"
 hash = "93f00f13c002b1790c82232ab16b099480c85f90a90ffac8517bb2e39270012b"
 metafile = true
@@ -6778,6 +6783,11 @@ metafile = true
 [[files]]
 file = "mods/skill_tree-neoforge-1.6.0+1.21.1-PjDhruSC-sxJUD8Hf.pw.toml"
 hash = "bf5c7655ad8c65ae0f9e53b36f17798a4c69e64bfb4390b4a1594601e311ffa3"
+metafile = true
+
+[[files]]
+file = "mods/slashblade-resharped.pw.toml"
+hash = "b3082807fc9506d0f0382c688c2eb591de06e0961019336d20730f7a66544d14"
 metafile = true
 
 [[files]]
