@@ -1,13 +1,13 @@
 name = "SlashBlade:Resharped"
-filename = "SlashBladeResharped-2.0.8-1.21.1.jar"
+filename = "SlashBladeResharped-2.0.7-1.21.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/8T53F0sy/versions/zTMJum3Z/SlashBladeResharped-2.0.8-1.21.1.jar"
+url = "https://cdn.modrinth.com/data/8T53F0sy/versions/u02EDgAr/SlashBladeResharped-2.0.7-1.21.1.jar"
 hash-format = "sha512"
-hash = "6594970d468ce769a253f0c912b7d32cfef3b32892a58f359c0b120af3f0ebfab72ab5fac8123971f8f4a895e39b9c2e2205cf59c838e823779e108dc3a4d001"
+hash = "ce46cf928d6414d60ca7bc2243e05a750a68d13a203924cf6cc3cedb9ea10a946b696ee42e24a98579f0486bc1f36324c987f25dbd32d7e012e3fa6c91c81ba1"
 
 [update]
 [update.modrinth]
 mod-id = "8T53F0sy"
-version = "zTMJum3Z"
+version = "u02EDgAr"
