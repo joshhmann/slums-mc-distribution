@@ -1,13 +1,10 @@
-name = "Tom's Simple Storage Mod"
-filename = "toms_storage-1.21-2.4.2.jar"
+name = "Tom's Simple Storage Mod — Slums lifetime hotfix (testing)"
+filename = "toms_storage-1.21-2.4.2-slums-lifetime-testing.1.jar"
 side = "both"
 
+# Unofficial MIT derivative; exact owner-lifetime prototype.
+# Deliberately no automatic upstream update rule.
 [download]
-url = "https://cdn.modrinth.com/data/XZNI4Cpy/versions/WQAMoIMC/toms_storage-1.21-2.4.2.jar"
+url = "https://github.com/joshhmann/slums-mc-distribution/releases/download/testing-toms-lifetime-1/toms_storage-1.21-2.4.2-slums-lifetime-testing.1.jar"
 hash-format = "sha512"
-hash = "53db61b4486616b3a78dfff83b58f9424dd9bf525ea3db4e444ff0403fb70aa9ab7fc097dff2f49665e480bce936b32be76b3051a5aff217898b2b94d846d30b"
-
-[update]
-[update.modrinth]
-mod-id = "XZNI4Cpy"
-version = "WQAMoIMC"
+hash = "d291dc9876e24ab2477b252d4b527c46ef781c6a066efb0dddad3f260d765b7434b6ad622dd1000f39fc6a8f7221fc4a933c0293e934038ca83810c6631a2ce2"
