@@ -1,0 +1,13 @@
+name = "tideautofish-1.0.0"
+filename = "tideautofish-1.0.0.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/wRHA78h0/versions/4EdJPerh/tideautofish-1.0.0.jar"
+hash-format = "sha512"
+hash = "8e1cc0f15f63dcd3a24c07ff6c9eeb9e02de4aaae3bc04a0141864f4919a5bbcea5c1830d710151c1dbfec66b70fc643d3721d1165883aa49664e26895b7f3f5"
+
+[update]
+[update.modrinth]
+mod-id = "wRHA78h0"
+version = "4EdJPerh"

@@ -1,0 +1,13 @@
+name = "Open Quests API"
+filename = "openquests_api-0.2.0+1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/E25HIGa8/versions/SuJLhzkh/openquests_api-0.2.0%2B1.21.1-neoforge.jar"
+hash-format = "sha512"
+hash = "d04850dff487dd650c6df79193335c1f21d9141a24acbcbcfd1350be1696d0d03ac25c98d411e8125903b76e4c075e9a4e669ab0813fadda0daeca3da27ec0ec"
+
+[update]
+[update.modrinth]
+mod-id = "E25HIGa8"
+version = "SuJLhzkh"

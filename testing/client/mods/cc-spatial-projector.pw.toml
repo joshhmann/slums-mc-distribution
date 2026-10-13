@@ -1,0 +1,13 @@
+name = "CC: Spatial Projector"
+filename = "cc_spatial_projector-0.1.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/vcgbtkpD/versions/U5woeSNw/cc_spatial_projector-0.1.0.jar"
+hash-format = "sha512"
+hash = "ac0ef4daf6180caadc3ca9fe2f450b309695adb7e0869ae4341d42a0063a463edb592dabf00bdff76547314740f154b70f35b4eac87783f0caa58a5c6bc79a75"
+
+[update]
+[update.modrinth]
+mod-id = "vcgbtkpD"
+version = "U5woeSNw"

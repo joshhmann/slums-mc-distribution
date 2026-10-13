@@ -1,0 +1,13 @@
+name = "Slums MC"
+author = "Josh"
+version = "1.9.1"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "b61f8bf280d99aea413ae838b457fc668d4c3661371a1ef9656eaa021d0b0d9f"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.248"

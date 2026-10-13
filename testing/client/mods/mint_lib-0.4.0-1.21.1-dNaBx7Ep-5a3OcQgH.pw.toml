@@ -1,0 +1,13 @@
+name = "mint_lib-0.4.0-1.21.1"
+filename = "mint_lib-0.4.0-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/dNaBx7Ep/versions/5a3OcQgH/mint_lib-0.4.0-1.21.1.jar"
+hash-format = "sha512"
+hash = "41d4d13196c012821d0414e18267b90bcda5aaa60d9214e0ddb17396393b07a7e2c998f751af0491c145e9f42894feee072ceb1cbaba8e914b1091b96ac799e7"
+
+[update]
+[update.modrinth]
+mod-id = "dNaBx7Ep"
+version = "5a3OcQgH"

@@ -1,0 +1,13 @@
+name = "choccos_mobs-0.2.0-neoforge-1.21.1"
+filename = "choccos_mobs-0.2.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/3FHR8Ewc/versions/TygENecY/choccos_mobs-0.2.0-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "d17980207bd4af709207301165f1001ffaa21ff5c77da267c1ff9f05d64ac68c49c0e33470f6e2714c4e9ff1254642a967d0e4a2bb8a885aeacb68e0ceb965a0"
+
+[update]
+[update.modrinth]
+mod-id = "3FHR8Ewc"
+version = "TygENecY"

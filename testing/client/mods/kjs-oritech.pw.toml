@@ -1,0 +1,13 @@
+name = "KubeJS Oritech"
+filename = "kubejs_oritech-neoforge-1.21.1-0.4.5.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/dobSKckb/versions/CMXy2hdg/kubejs_oritech-neoforge-1.21.1-0.4.5.jar"
+hash-format = "sha512"
+hash = "6271b2f39a037d1ef822ccf2a5888ade26f1e32caf589811ffc38a1906c732eaea83c2f3ac998a45e743fac7c97516462c135131aa22287fe9970e08bd8564b9"
+
+[update]
+[update.modrinth]
+mod-id = "dobSKckb"
+version = "CMXy2hdg"

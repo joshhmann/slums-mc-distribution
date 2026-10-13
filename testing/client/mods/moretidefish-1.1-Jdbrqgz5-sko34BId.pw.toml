@@ -1,0 +1,13 @@
+name = "moretidefish-1.1"
+filename = "moretidefish-1.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Jdbrqgz5/versions/sko34BId/moretidefish-1.1.jar"
+hash-format = "sha512"
+hash = "811c844b5a40408049430aa5587cae559055dbe121cee4b0226624377cea7fd432c22f847bf07189bc2fc4da0f6bce50be71cd10280b39ffaabeafe931ff917c"
+
+[update]
+[update.modrinth]
+mod-id = "Jdbrqgz5"
+version = "sko34BId"

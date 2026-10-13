@@ -1,0 +1,13 @@
+name = "naturalregrowth-4.3.0"
+filename = "naturalregrowth-4.3.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/6MFCtwrW/versions/ZRwyeSx4/naturalregrowth-4.3.0.jar"
+hash-format = "sha512"
+hash = "0565f0be9429910311d6cf97162587a73b900f8db4f07219907b2517c30b72766728f2eb5188d786ceb3eb8a112b1450807e78e48cbf9dd704e82ba2001580bb"
+
+[update]
+[update.modrinth]
+mod-id = "6MFCtwrW"
+version = "ZRwyeSx4"

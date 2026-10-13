@@ -1,0 +1,13 @@
+name = "Every Mining Dimension"
+filename = "everyminingdimension-neoforge-1.21.1-2.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/CbHJ6nd4/versions/KfSHJCSF/everyminingdimension-neoforge-1.21.1-2.0.0.jar"
+hash-format = "sha512"
+hash = "da0db095cfc7e547f3d53218d39e6f856d93933a6ae7b54411cd8f5885241d2754c0f200e359fcab249c652a1075c5b9f00f6193661766a53d7b05c5288286b3"
+
+[update]
+[update.modrinth]
+mod-id = "CbHJ6nd4"
+version = "KfSHJCSF"

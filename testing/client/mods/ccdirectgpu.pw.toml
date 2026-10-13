@@ -1,0 +1,13 @@
+name = "CC:DirectGPU"
+filename = "directgpu-1.0.25-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/y2LA8uQE/versions/CFRJ0qJr/directgpu-1.0.25-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "081e5eb17ce20caafe595dd0bda321a3be90d6f966c8cd2e8dbbb4259d44864314a399154b660c5083fc50173bd763dbc7afc4ca43dc27ad5d13315b1ffc4c02"
+
+[update]
+[update.modrinth]
+mod-id = "y2LA8uQE"
+version = "CFRJ0qJr"
