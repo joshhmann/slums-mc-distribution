@@ -1,0 +1,13 @@
+name = "Open Quests Community Pack"
+filename = "openquests-0.1.6+1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/2EZi6Edr/versions/xWAiqyK7/openquests-0.1.6%2B1.21.1-neoforge.jar"
+hash-format = "sha512"
+hash = "369c63743f8b89724dd94d2532e9754400d765ac32769c4fb3de9fc9dafee8d5f0e4253daccac009c7ccbf7b78af1a775d6eacbab6622d6f1d2081cdd1148f8c"
+
+[update]
+[update.modrinth]
+mod-id = "2EZi6Edr"
+version = "xWAiqyK7"
