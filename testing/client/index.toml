@@ -6,7 +6,7 @@ hash = "6d46bdc090d4bb9bdfb660be4ca94075dc08e09d5fed84108eba92a422a23c49"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "07f635a15949c4523afb79a6007a3d14ca78dea4479481994cfbc503f5252cb8"
+hash = "377158e71a2143308f142a1f9d8424602c76496487ec4a8f53d0e72e4bdd6f28"
 
 [[files]]
 file = "config/MouseTweaks.cfg"
@@ -1125,10 +1125,6 @@ file = "config/bwncr-common.toml"
 hash = "a8d9256245e6a4a9ef9cd19db22432e7dccf447fa7ba803a70ebd23624e7d21b"
 
 [[files]]
-file = "config/c2me.toml"
-hash = "bd1c52d5ec5277f727a926fbbfe78707f5ee58c6816d688da08864a938f505c3"
-
-[[files]]
 file = "config/camping-common.toml"
 hash = "db88673b5abbc8610a672022ce7f0c2ac4fd448488f054bffbe991d3baa4e9c6"
 
@@ -2207,6 +2203,10 @@ hash = "43d5cdfc1997a8aaabfc301e746b773319999d348661a1a7a04b37a70fda93c1"
 [[files]]
 file = "config/sable-server.toml"
 hash = "9c3e9012ea23ca1449fdfc7df7a8134d4f0f2eacc46f8f8c1ab9ccb2b4510783"
+
+[[files]]
+file = "config/seedgen.json"
+hash = "34b0881f31abfbf1342d745f7cf1840123e657c2a9f1a56366f6eec69a2804f8"
 
 [[files]]
 file = "config/servercore/config.yml"
@@ -5301,10 +5301,6 @@ file = "config/zeta-common.toml"
 hash = "d985bfc68899c91aa642736400472f6ab876dedaaef4b8c31f38b52d48de633d"
 
 [[files]]
-file = "config/zfastnoise.mixin.properties"
-hash = "3654c3ab2eed7d7e27d5146e4423c5dd2a7ae5030739a2c8e0e871703f2ee222"
-
-[[files]]
 file = "kubejs/client_scripts/emi.js"
 hash = "ef2495fe8549ff47b3e1ded36b893d65170cd13a5a56a90082b3c956469c2bb4"
 
@@ -5344,16 +5340,6 @@ metafile = true
 [[files]]
 file = "mods/BrewinAndChewin-neoforge-4.5.0+1.21.1-hIu9KJTT-MbcR48Ou.pw.toml"
 hash = "258335183d39e98e78dd40a755b83a19ee6fd66c51a36bfe95c5dcdab8c25c08"
-metafile = true
-
-[[files]]
-file = "mods/Chunky-NeoForge-1.4.23-fALzjamp-LuFhm4eU.pw.toml"
-hash = "4b9326eae47334ab26bca6604319f3d55bdaa9a56df35df3fbff256e54aaa32a"
-metafile = true
-
-[[files]]
-file = "mods/ChunkyBorder-1.2.18-s86X568j-Pj0tqKnE.pw.toml"
-hash = "a695063af6a2529e187d0df495c827330da7d694659126f2173f47847bc706ce"
 metafile = true
 
 [[files]]
@@ -5777,11 +5763,6 @@ hash = "51abed151dd192d6dcb625b3b72b7341af4232bcf96b7a54e57281401dcf80ca"
 metafile = true
 
 [[files]]
-file = "mods/c2me-neoforge-mc1.21.1-0.4.0-alpha.0.120-COlSi5iR-kvrPcTsz.pw.toml"
-hash = "9c6afcd82b6c1091e0c1440e09dc604d5804554b1a68af900c891292b61774a1"
-metafile = true
-
-[[files]]
 file = "mods/camping-neoforge-1.21.1-2.1.4-uJXTNuf0-FbkgllmH.pw.toml"
 hash = "152850725adce113d1154974a4899d49ff28596908c378f8dfd45a97619d6640"
 metafile = true
@@ -5839,11 +5820,6 @@ metafile = true
 [[files]]
 file = "mods/choccos_mobs-0.2.0-neoforge-1.21.1-3FHR8Ewc-TygENecY.pw.toml"
 hash = "7c1661614dda9d769d91b3a85652774911a7250407daefe477a00ce54e825716"
-metafile = true
-
-[[files]]
-file = "mods/chunky-offline-v1.1.0-VfHc5JEX-56xL4i2r.pw.toml"
-hash = "1cdcc7064b5a835632b2438ccdd52b075c2df93fa00985f2f1b2d5ddd75b87b6"
 metafile = true
 
 [[files]]
@@ -6089,6 +6065,11 @@ metafile = true
 [[files]]
 file = "mods/delightlib-26.05.18-1.21-neoforge-rmDY6fYt-wCR4QGbG.pw.toml"
 hash = "35d5eb2fa241f79bcaf6eeb7f927e447221c60c8661c950a0b1749b8ac824475"
+metafile = true
+
+[[files]]
+file = "mods/distant-horizons-seedgen.pw.toml"
+hash = "b9788c7248ce8898cfdfc489cc994619dd545fdd9ee72fc5a610c638b579e354"
 metafile = true
 
 [[files]]
@@ -7130,13 +7111,8 @@ hash = "5f965ea5dfe10e641056c249f8bf14e91f1a66781f435e8d532df41b5eafbbe8"
 metafile = true
 
 [[files]]
-file = "mods/zfastnoise-1.0.13+1.21.1+neoforge-OnlVIpq5-9vSFkDAr.pw.toml"
-hash = "4334fc4fbc1e0bafa236fa1ed19412b11e942b29a52f01078fac290bd87a8c79"
-metafile = true
-
-[[files]]
 file = "servers.dat"
-hash = "17dc164c988aac338c8554912fd893786474f1f01d8fa3c0711ca4c6ed825a74"
+hash = "f8ec39131a70a6f47931f26ac0692879e34a568b7fbd01230558e4630a850a4a"
 
 [[files]]
 file = "shaderpacks/Bliss_v2.1.2_-Chocapic13_Shaders_edit-ZvMtQlho-kC2Y8q1P.pw.toml"
